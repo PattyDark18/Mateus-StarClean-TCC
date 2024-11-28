@@ -1,0 +1,595 @@
+/* Container principal que organiza o layout das divs */
+.container {
+  display: flex; /* Usa flexbox para layout */
+  flex-direction: column; /* Organiza os filhos verticalmente */
+  position: relative; /* Permite posicionar elementos filhos com relação a este container */
+  width: 100%; /* Largura total do container */
+  height: 700px; /* Altura fixa */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove padding */
+}
+
+/* Estilos para a div superior e inferior do container */
+.div-top, .div-bottom {
+  flex: 1; /* Ocupa o mesmo espaço disponível */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estilo específico para a div superior */
+.div-top {
+  background-color: var(--verde-agua-claro); /* Cor de fundo */
+  width: 100%; /* Largura total */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+/* Estilo específico para a div inferior */
+.div-bottom {
+  background-color: transparent; /* Fundo transparente */
+}
+
+/* Estilo para a imagem centralizada */
+.central-image {
+  position: absolute; /* Posiciona a imagem relativamente ao container pai */
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta o posicionamento para o centro exato */
+  width: 400px; /* Largura fixa */
+  height: auto; /* Altura ajustada automaticamente */
+}
+
+/* Estilo para os parágrafos */
+p {
+    margin: 0; /* Remove margens */
+    padding: 20px; /* Adiciona padding */
+    font-size: 25px; /* Tamanho da fonte */
+}
+
+/* Estilo para o título principal */
+.titulo {
+    font-family: 'Start', serif; /* Fonte personalizada */
+    font-size: 48px; /* Tamanho da fonte */
+    -webkit-text-stroke: 1px; /* Contorno do texto para navegadores WebKit */
+    -webkit-text-stroke-color: #000; /* Cor do contorno */
+    -webkit-text-fill-color: var(--Ambar); /* Cor do preenchimento do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: auto; /* Margens automáticas para centralização */
+    margin-top: 150px; /* Margem superior */
+}
+
+/* Estilo para o slogan */
+.slogan {
+    text-align: center; /* Alinha o texto ao centro */
+    margin: auto; /* Margens automáticas para centralização */
+}
+
+/* Layout principal com grid */
+.principal {
+    display: grid; /* Usa grid para layout */
+    grid-template-columns: 2fr 1fr; /* Define duas colunas de tamanhos proporcionais */
+    gap: 20px; /* Espaçamento entre as colunas */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    padding: 20px; /* Padding interno */
+    margin: 0px 40px 60px 40px; /* Margens laterais e inferior */
+    margin-top: -100px; /* Margem superior negativa para sobreposição */
+}
+
+/* Estilo para a seção de informações */
+.informacoes {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para o texto dentro da seção de informações */
+.informacoes .text {
+   font-size: 20px; /* Tamanho da fonte */
+}
+
+/* Estilo para o cabeçalho */
+h1 {
+    font-size: 40px; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: auto; /* Margens automáticas para centralização */
+}
+
+/* Estilo para a seção de destaque */
+.destaque {
+  margin: auto; /* Margens automáticas para centralização */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo para os parágrafos na seção de destaque */
+.destaque p {
+  margin: 50px; /* Margem ao redor do parágrafo */
+}
+
+/* Container para a foto com centralização */
+.container-foto {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo para a imagem dentro do container de fotos */
+.container-foto .foto img {
+    width: 300px; /* Largura fixa */
+    max-width: 100%; /* Largura máxima de 100% */
+    height: auto; /* Altura ajustada automaticamente */
+    border-radius: 50%; /* Imagem com bordas arredondadas */
+}
+
+/* Efeito de hover para a imagem dentro do container de fotos */
+.container-foto .foto img:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra ao redor da imagem */
+    transform: scale(1.05); /* Aumenta o tamanho da imagem */
+    transition: 0.3s; /* Transição suave para o efeito */
+}
+
+/* Estilo para a seção secundária */
+.secundario {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Padding interno */
+}
+
+/* Estilo para o card informativo */
+.card-informativo {
+    display: grid; /* Usa grid para layout */
+    grid-template-columns: 1fr; /* Uma única coluna */
+    background-color: #fff; /* Cor de fundo branca */
+    width: 100%; /* Largura total */
+    border-radius: 65px; /* Bordas arredondadas */
+    padding: 50px; /* Padding interno */
+    max-width: 100%; /* Largura máxima de 100% */
+}
+
+/* Estilo para o conteúdo dentro do card informativo */
+.card-content {
+    display: grid; /* Usa grid para layout */
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    padding: 20px; /* Padding interno */
+}
+
+/* Estilo para o texto dentro do card */
+.texto-card {
+    font-size: 22px; /* Tamanho da fonte */
+    margin: auto; /* Margens automáticas para centralização */
+    margin-right: 30px; /* Margem direita */
+    margin-left: 30px; /* Margem esquerda */
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    justify-content: space-between; /* Espaçamento uniforme entre os itens */
+}
+
+/* Estilo para os parágrafos dentro do card */
+.texto-card p {
+    margin: 0 0 20px 0; /* Margem inferior */
+}
+
+/* Estilo para a foto dentro do card */
+.foto-card {
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Estilo para a imagem dentro do card */
+.foto-card img {
+    border-radius: 45px; /* Bordas arredondadas */
+    margin: auto; /* Margens automáticas para centralização */
+    border: var(--verde-agua-claro) 18px solid; /* Borda colorida */
+    width: 100%; /* Largura total */
+    max-width: 400px; /* Largura máxima de 400px */
+    transition: transform 0.3s ease-in-out; /* Transição suave para o efeito */
+}
+
+/* Efeito de hover para a imagem dentro do card */
+.foto-card:hover img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra ao redor da imagem */
+    transform: scale(1.05); /* Aumenta o tamanho da imagem */
+}
+
+/* Estilo para o botão de agendamento */
+.agendar {
+    display: inline-block; /* Exibe como um bloco em linha */
+    background-color: var(--Ambar); /* Cor de fundo */
+    color: #000000; /* Cor do texto */
+    border: none; /* Remove bordas */
+    padding: 10px 20px; /* Padding interno */
+    margin-top: 20px; /* Margem superior */
+    border-radius: 15px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    align-self: flex-start; /* Alinha ao início do contêiner pai */
+    max-width: 100%; /* Largura máxima de 100% */
+    height: auto; /* Altura ajustada automaticamente */
+    transition: transform 0.3s ease-in-out; /* Transição suave para o efeito */
+    margin: auto; /* Margens automáticas para centralização */
+    text-align: center; /* Alinha o texto ao centro */
+    line-height: 60px; /* Altura da linha */
+}
+
+/* Efeito de hover para o botão de agendamento */
+.agendar:hover {
+    background-color: #fac385; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão */
+    transition: 0.3s; /* Transição suave para o efeito */
+}
+
+
+
+/* Estilo para o link dentro do botão de agendar */
+.agendar a {
+  color: #000000; /* Cor do texto do link */
+  text-decoration: none; /* Remove sublinhado do link */
+  font-family: 'Doppio One', serif; /* Fonte personalizada */
+  font-size: 24px; /* Tamanho da fonte */
+  display: block; /* Exibe como bloco para ocupar a largura total */
+  height: 100%; /* Altura total do contêiner pai */
+  line-height: 80px; /* Altura da linha para centralizar verticalmente */
+}
+
+/* Estilo para a seção de vídeos e serviços na home */
+.video-servicos-home {
+padding: 0 70px; /* Padding interno nas laterais */
+}
+
+/* Estilo para o título da seção de vídeos e serviços */
+.video-servicos-home .titulo-secao {
+text-align: center; /* Centraliza o texto */
+padding: 60px 0; /* Padding vertical */
+font-size: 40px; /* Tamanho da fonte */
+font-weight: 500; /* Peso da fonte */
+color: #fff; /* Cor do texto */
+}
+
+/* Estilo para o contêiner de serviços */
+.video-servicos-home .container-servicos {
+display: flex; /* Usa flexbox para layout */
+gap: 20px; /* Espaçamento entre os itens */
+flex-wrap: wrap; /* Permite quebra de linha */
+margin-bottom: 20px; /* Margem inferior */
+justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo para cada serviço dentro do contêiner de serviços */
+.video-servicos-home .servico {
+position: relative; /* Permite posicionamento absoluto dos filhos */
+}
+
+/* Estilo para o título dentro do serviço */
+.video-servicos-home .servico h3 {
+background-color: black; /* Cor de fundo */
+width: 100%; /* Largura total */
+padding-left: 20px; /* Padding interno à esquerda */
+padding-bottom: 10px; /* Padding interno na parte inferior */
+padding-top: 10px; /* Padding interno na parte superior */
+position: absolute; /* Posiciona o título dentro do serviço */
+bottom: 0; /* Alinha ao fundo do contêiner */
+left: 0; /* Alinha à esquerda do contêiner */
+border-bottom-left-radius: 45px; /* Bordas arredondadas inferiores à esquerda */
+border-bottom-right-radius: 45px; /* Bordas arredondadas inferiores à direita */
+color: white; /* Cor do texto */
+box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+text-align: center; /* Centraliza o texto */
+opacity: 0; /* Inicialmente invisível */
+z-index: 1; /* Coloca acima dos outros elementos */
+}
+
+/* Estilo para o vídeo dentro do serviço */
+.video-servicos-home .servico video {
+width: 100%; /* Largura total */
+max-width: 400px; /* Largura máxima */
+height: 100%; /* Altura total */
+max-height: 600px; /* Altura máxima */
+border-radius: 45px; /* Bordas arredondadas */
+}
+
+/* Estilo para a informação do serviço */
+.video-servicos-home .servico .informacoes-servico {
+background-color: black; /* Cor de fundo */
+position: absolute; /* Posiciona sobre o vídeo */
+font-size: 20px; /* Tamanho da fonte */
+/* text-align: justify; */ /* Alinhamento do texto (comentado) */
+top: 0; /* Alinha ao topo do contêiner */
+width: 100%; /* Largura total */
+height: 100%; /* Altura total */
+font-weight: 600; /* Peso da fonte */
+opacity: 0; /* Inicialmente invisível */
+transition: 0.3s; /* Transição suave para efeitos */
+padding: 20px; /* Padding interno */
+color: white; /* Cor do texto */
+border-radius: 45px; /* Bordas arredondadas */
+}
+
+/* Estilo para mostrar a informação do serviço ao passar o mouse */
+.video-servicos-home .servico:hover .informacoes-servico {
+opacity: 0.8; /* Torna visível */
+background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo com opacidade */
+}
+
+/* Estilo para o texto dentro do serviço */
+.texto-servico {
+margin: 30px; /* Margem ao redor do texto */
+}
+
+/* Estilo para o botão "Saiba Mais" */
+.video-servicos-home .servico .saiba-mais {
+display: none; /* Inicialmente oculto */
+position: absolute; /* Posiciona sobre o vídeo */
+bottom: 100px; /* Distância do fundo */
+left: 50%; /* Centraliza horizontalmente */
+transform: translateX(-50%); /* Ajusta para o centro exato */
+background-color: transparent; /* Fundo transparente */
+color: white; /* Cor do texto */
+border: 4px solid white; /* Borda branca */
+padding: 10px 20px; /* Padding interno */
+border-radius: 15px; /* Bordas arredondadas */
+cursor: pointer; /* Cursor de ponteiro */
+text-transform: uppercase; /* Transformação de texto para maiúsculas */
+font-family: 'Doppio One', serif; /* Fonte personalizada */
+}
+
+/* Estilo para mostrar o botão "Saiba Mais" ao passar o mouse */
+.video-servicos-home .servico:hover .saiba-mais {
+display: block; /* Exibe o botão */
+}
+
+/* Estilo para o link dentro do botão "Saiba Mais" */
+.video-servicos-home .servico .saiba-mais a {
+color: white; /* Cor do texto do link */
+text-decoration: none; /* Remove sublinhado do link */
+}
+
+/* Estilo para mostrar o título ao passar o mouse */
+.video-servicos-home .servico:hover h3 {
+opacity: 1; /* Torna visível */
+}
+
+/* Estilo para o botão "Ver Outros" */
+.botao-ver-outros {
+display: flex; /* Usa flexbox para layout */
+justify-content: center; /* Centraliza horizontalmente */
+margin: 50px 0 100px 0; /* Margens superior e inferior */
+transition: transform 0.3s ease; /* Transição suave para o efeito */
+}
+
+/* Estilo para aumentar o botão "Ver Outros" ao passar o mouse */
+.botao-ver-outros:hover {
+transform: scale(1.1); /* Aumenta o tamanho do botão */
+}
+
+/* Estilo para o botão "Ver Outros" */
+.ver-outros {
+background-color: transparent; /* Fundo transparente */
+color: white; /* Cor do texto */
+border: 4px solid white; /* Borda branca */
+padding: 20px; /* Padding interno */
+border-radius: 15px; /* Bordas arredondadas */
+cursor: pointer; /* Cursor de ponteiro */
+text-transform: uppercase; /* Transformação de texto para maiúsculas */
+font-family: 'Doppio One', serif; /* Fonte personalizada */
+text-decoration: none; /* Remove sublinhado */
+font-size: 22px; /* Tamanho da fonte */
+}
+
+/* Estilo para o rodapé */
+footer {
+background-color: var(--verde-pinho); /* Cor de fundo */
+display: flex; /* Usa flexbox para layout */
+justify-content: center; /* Centraliza horizontalmente */
+padding: 20px 0; /* Padding vertical */
+}
+
+/* Estilo para os ícones no rodapé */
+.instagram-icon, .location-icon, .youtube-icon, .email-icon {
+color: white; /* Cor dos ícones */
+font-size: 24px; /* Tamanho dos ícones */
+cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Estilo para a grid no rodapé */
+.footer-grid {
+display: grid; /* Usa grid para layout */
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Define colunas automáticas */
+gap: 20px; /* Espaçamento entre as colunas */
+max-width: 800px; /* Largura máxima */
+margin: 0 auto; /* Margens automáticas para centralização */
+text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para as colunas no rodapé */
+.footer-column {
+display: flex; /* Usa flexbox para layout */
+flex-direction: column; /* Organiza os itens verticalmente */
+align-items: center; /* Alinha horizontalmente */
+}
+
+/* Estilo para os ícones dentro das colunas do rodapé */
+.footer-column i {
+font-size: 24px; /* Tamanho dos ícones */
+margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilo para o texto dentro das colunas do rodapé */
+.footer-column span {
+font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilo para o botão de menu hamburguer */
+.hamburger {
+display: none; /* Oculta por padrão */
+font-size: 30px; /* Tamanho da fonte */
+cursor: pointer; /* Cursor de ponteiro */
+margin-right: auto; /* Margem direita automática */
+color: #ffff; /* Cor do ícone */
+}
+
+
+.capsule {
+    width: 500px; /* Aumentado para maior largura */
+    height: 350px; 
+    background: linear-gradient(180deg, var(--verde-agua-claro), var(--Azul-Cobalto));
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: transform 0.5s;
+    perspective: 1000px;
+    margin: 100px auto; /* Centraliza horizontalmente */
+  
+}
+
+.capsule:hover {
+    transform: rotateY(10deg);
+}
+
+.capsule::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 20px;
+    background: #d4af37;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Mantém centralizado */
+    text-align: center;
+    opacity: 1; /* Mantido visível inicialmente */
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+    width: 90%; /* Define uma largura máxima */
+}
+
+.capsule h2{
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px; /* Removido margem */
+}
+
+.contents p {
+    font-size: 22px; /* Diminuído para um tamanho mais adequado */
+    margin: 0; /* Removido margem */
+    padding: 0; /* Removido padding */
+    color: white;
+}
+
+.secret {
+    font-size: 24px;
+    margin-top: 20px;
+    background-color: rgba(15, 14, 0, 0.253);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--Ambar);
+}
+
+/* Estilo geral do popup */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; /* Largura do popup */
+    height: 560px; /* Aumente a altura do popup */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1000;
+}
+
+
+/* Mostrar popup */
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Conteúdo do popup */
+.popup-content {
+    text-align: center;
+    z-index: 2;
+}
+
+.popup-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 18px;
+    /* margin-bottom: 20px; */
+}
+
+/* Estilo para a pré-visualização do manual */
+.manual-preview {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Estilo da imagem de capa para cobrir o popup */
+.manual-cover {
+    position: absolute;
+    top: 0;
+    top: -20px;
+    right: 100%; /* posição inicial fora da tela para a direita */
+    width: 100%;
+    height: calc(100% - 120px);
+    object-fit: cover; /* mudou de contain para cover */
+    opacity: 0;
+    transition: opacity 0.5s ease, right 0.5s ease; /* adicionou transição para a direita */
+    z-index: 1;
+    box-sizing: border-box;
+    object-fit: contain; 
+    overflow: hidden;
+}
+
+
+.manual-preview:hover .manual-cover {
+    right: 0; /* desliza da direita para a esquerda */
+    opacity: 1;
+}
+
+/* Estilo para o botão de download sobre a imagem */
+.download-link {
+    position: absolute;
+    top: 55%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+    display: none;
+    border-radius: 50%;
+    
+}
+
+.manual-preview:hover .download-link {
+    display: block; /* Aparece ao passar o mouse */
+}

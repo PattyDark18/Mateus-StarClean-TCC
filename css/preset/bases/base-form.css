@@ -1,0 +1,173 @@
+/* Define o estilo geral do corpo da página */
+body {
+  background-color: #ECECECEC; /* Cor de fundo clara */
+  font-family: 'Doppio One', serif; /* Fonte padrão serifada */
+}
+
+/* Estilo do contêiner principal que envolve as seções esquerda e direita */
+.container {
+  background-color: rgb(134, 134, 134); /* Cor de fundo cinza */
+  border-radius: 38px; /* Cantos arredondados */
+  width: 87%; /* Largura da caixa */
+  margin: 30px auto; /* Margem superior/inferior e centralização horizontal */
+  display: flex; /* Utiliza o flexbox para layout */
+  height: 610px; /* Altura fixa */
+  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o contêiner */
+}
+
+/* Estilo da seção esquerda */
+.left-section {
+  position: relative; /* Permite posicionamento absoluto de elementos filhos */
+  padding: 20px; /* Espaçamento interno */
+  display: flex; /* Utiliza flexbox para layout interno */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  width: 50%; /* Largura da seção */
+  background-color: #a18b84; /* Cor de fundo marrom claro */
+  border-top-left-radius: 38px; /* Canto superior esquerdo arredondado */
+  border-bottom-left-radius: 38px; /* Canto inferior esquerdo arredondado */
+}
+
+/* Estilo da seção direita */
+.right-section {
+  padding: 20px; /* Espaçamento interno */
+  display: flex; /* Utiliza flexbox para layout interno */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  width: 50%; /* Largura da seção */
+  background-color: #a7a7a7; /* Cor de fundo cinza claro */
+  border-top-right-radius: 38px; /* Canto superior direito arredondado */
+  border-bottom-right-radius: 38px; /* Canto inferior direito arredondado */
+}
+
+/* Estilo do container de informações de boas-vindas */
+.welcome-info {
+  display: flex; /* Utiliza flexbox para layout interno */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+  height: 100%; /* Altura completa do contêiner pai */
+  width: 100%; /* Largura completa do contêiner pai */
+}
+
+/* Estilo do texto de boas-vindas */
+.welcome {
+  font-family: 'Doppio One', serif; /* Fonte serifada para o texto */
+  font-size: 30px; /* Tamanho da fonte */
+}
+
+/* Estilo do container para redirecionamento */
+.redirect-container {
+  display: flex; /* Utiliza flexbox para layout interno */
+  align-items: center; /* Alinha o conteúdo verticalmente */
+  gap: 20px; /* Espaçamento entre os itens */
+  margin-top: 20px; /* Margem superior */
+}
+
+/* Estilo do texto de redirecionamento */
+.redirect-text {
+  font-weight: 500; /* Peso da fonte semi-negrito */
+  font-size: 22px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de redirecionamento */
+.redirect-button {
+  display: flex; /* Utiliza flexbox para layout interno */
+  background-color: transparent; /* Fundo transparente */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  border: 2px solid rgb(0, 0, 0); /* Borda preta */
+  padding: 8px; /* Espaçamento interno */
+  border-radius: 15px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  font-family: 'Doppio One', serif; /* Fonte serifada para o texto */
+  text-decoration: none; /* Remove sublinhado do texto */
+  font-size: 22px; /* Tamanho da fonte */
+  transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+/* Estilo do botão de redirecionamento ao passar o mouse */
+.redirect-button:hover {
+  transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+}
+
+/* Estilo do link dentro do botão de redirecionamento */
+.redirect-button a {
+  color: black; /* Cor do texto do link */
+  text-decoration: none; /* Remove sublinhado do link */
+}
+
+/* Estilo do botão de retorno */
+.return {
+  position: absolute; /* Posiciona o botão fora do fluxo normal do documento */
+  top: 20px; /* Distância do topo */
+  left: 20px; /* Distância da esquerda */
+  background-color: var(--Ambar); /* Cor de fundo amarela */
+  border: none; /* Remove a borda padrão */
+  border-radius: 50%; /* Torna o botão circular */
+  width: 50px; /* Largura do botão */
+  height: 50px; /* Altura do botão */
+  display: flex; /* Utiliza flexbox para layout interno */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  font-size: 24px; /* Tamanho da fonte do ícone */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+/* Estilo do botão de retorno ao passar o mouse */
+.return:hover {
+  background-color: #fac385; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+}
+
+/* Estilo do ícone dentro do botão de retorno */
+.return i {
+  color: white; /* Cor do ícone */
+}
+
+/* Estilo do rodapé */
+.footer {
+  margin-top: auto; /* Empurra o rodapé para o fundo da página */
+  width: 100%; /* Largura completa */
+  display: flex; /* Utiliza flexbox para layout */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  padding: 20px 0; /* Espaçamento interno vertical */
+}
+
+/* Estilo dos ícones no rodapé */
+.instagram-icon, .location-icon, .youtube-icon, .email-icon, a  .whatsapp-icon {
+  color: rgb(0, 0, 0); /* Cor dos ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+/* Estilo da grade do rodapé */
+.footer-grid {
+  display: grid; /* Utiliza grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Define colunas responsivas */
+  gap: 20px; /* Espaçamento entre as colunas */
+  max-width: 800px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo das colunas do rodapé */
+.footer-column {
+  display: flex; /* Utiliza flexbox para layout interno */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilo dos ícones dentro das colunas do rodapé */
+.footer-column i {
+  font-size: 24px; /* Tamanho dos ícones */
+  margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilo do texto dentro das colunas do rodapé */
+.footer-column span {
+  font-size: 14px; /* Tamanho da fonte */
+}

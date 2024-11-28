@@ -1,0 +1,490 @@
+/* Estilo para o contêiner principal da lista */
+.container-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo para o contêiner da tabela */
+.table-container {
+    width: 100%; /* Largura do contêiner */
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+}
+
+/* Estilo para a tabela */
+.container-lista table {
+    background-color: white;
+    width: 100%;
+    max-width: 100%; /* Garante que a tabela não ultrapasse 100% da largura do contêiner */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    border: 2px solid #000;
+}
+
+/* Estilo para o cabeçalho da tabela */
+.container-lista th {
+    color: white;
+    background-color: var(--verde-pinho);
+    padding: 15px;
+    text-align: left;
+}
+
+/* Estilo para as células da tabela */
+.container-lista td {
+    font-size: 2vw; /* Tamanho da fonte responsivo */
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    min-width: 100px; /* Define uma largura mínima para as células */
+}
+
+/* Media queries para ajustar o tamanho da fonte em telas menores */
+@media (max-width: 768px) {
+    .container-lista td {
+        font-size: 3vw; /* Aumenta o tamanho da fonte em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .container-lista td {
+        font-size: 4vw; /* Aumenta ainda mais o tamanho da fonte em telas muito pequenas */
+    }
+}
+
+/* Estilo para o título da lista */
+
+
+
+
+
+.container-lista h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* Estilo para a linha de usuário */
+
+/* Estilo para os botões de ação */
+.edit-btn, .see-more-btn, .excluir-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 0.3s ease; 
+  
+
+
+
+
+
+
+    
+}
+
+
+
+.edit-btn{
+color: var(--Azul-Cobalto); 
+
+
+}
+.edit-btn:hover{
+transform: scale(1.1); 
+
+
+}
+.see-more-btn{
+color: var(--cinza-claro); 
+
+
+}
+.see-more-btn:hover{
+transform: scale(1.1); 
+
+
+}
+
+/* Estilo para o ícone de edição */
+.edit-btn i,  .see-more-btn i{
+    font-size: 18px;
+}
+
+/* Alinhamento dos botões na célula */
+.container-lista td:last-child {
+    display: flex;
+
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* Card de Fotos */
+.photo-card {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+   
+}
+
+.photo-card-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transform: translate(50%, 0%);  /* Ajusta para que o centro do modal esteja no centro da tela */
+}
+
+.photo-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+  max-height: 500px; /* or use object-fit: contain/cover */
+  object-fit: cover; /* or use max-height: 500px */
+}
+
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+}
+
+
+
+/* Estilo dos botões de controle do slider */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta a posição centralizada */
+    background-color: var(--Ambar); /* Cor de fundo amarela */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50%; /* Torna o botão circular */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    display: flex; /* Utiliza flexbox para layout interno */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    font-size: 24px; /* Tamanho da fonte do ícone */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    color: white; /* Cor do ícone */
+    z-index: 100; /* Garante que os botões fiquem sobre os outros elementos */
+}
+
+.prev-btn {
+    left: 10px; /* Distância da esquerda */
+}
+
+.next-btn {
+    right: 10px; /* Distância da direita */
+}
+
+/* Estilo dos botões ao passar o mouse */
+.prev-btn:hover, .next-btn:hover {
+    background-color: #fac385; /* Cor de fundo ao passar o mouse */
+   
+}
+
+
+
+
+/* Estiliza o botão "Adicionar Serviço" */
+.add-service-btn, .excluir-btn, .remarcar-btn, .pendente, .concluido{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px; /* Torna o botão redondo */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    cursor: pointer;
+    text-decoration: none; /* Remove sublinhado do link */
+    transition: background-color 0.3s ease; /* Efeito de transição */
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Faz o botão se comportar como um bloco para centralização */
+    transition: transform 0.3s ease; 
+    background:none;
+}
+
+/* Estiliza o ícone dentro do botão */
+.add-service-btn {
+background-color: var(--Azul-Cobalto); 
+}
+
+
+
+
+.remarcar-btn{
+color: var(--Azul-Cobalto); 
+}
+
+.remarcar-btn:hover{
+color: rgb(93, 134, 196); 
+}
+
+
+.excluir-btn, .pendente{
+color: rgb(187, 19, 19); 
+}
+
+
+.add-service-btn i, .excluir-btn i, .remarcar-btn, .concluido, .pendente{
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    font-size: 24px; /* Aumenta o tamanho do ícone */
+    vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
+}
+
+/* Estilo do botão ao passar o mouse */
+.add-service-btn:hover {
+    background-color: var(--gota-azul);
+    transform: scale(1.1); 
+}
+
+.excluir-btn:hover, .pendente{
+   color: rgb(136, 11, 11);
+   
+}
+.concluido{
+   color: rgb(30, 214, 13);
+   
+}
+.concluido:hover{
+   color: rgb(15, 105, 7);
+   
+}
+
+
+
+
+.detalhes{
+    background-color: var(--Ambar); /* Cor de fundo do botão */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Cor do texto */
+    padding: 10px 15px; /* Aumenta o espaçamento interno (padding) */
+    text-align: center; /* Alinha o texto ao centro */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 4px 2px; /* Margem ao redor do botão */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    border-radius: 8px; /* Cantos arredondados */
+    transition: transform 0.3s ease; 
+    min-width: 80px; /* Define uma largura mínima para o botão */
+    display: inline-block; /* Permite definir largura e altura */
+}
+
+
+/* Estilo do botão quando o mouse passa sobre ele */
+.detalhes:hover {
+    background-color: #c7912c; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); 
+}
+
+
+.status_verde, .status_vermelho, .tipoADM, .tipoComum, .tipoOutros, .TipoDesconto, .ServicoAdd{
+    border: none; /* Remove a borda padrão */
+    padding: 8px; /* Espaçamento interno (padding) */
+    text-align: center; /* Alinha o texto ao centro */
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-block; /* Permite definir largura e altura */
+
+    margin: 4px 2px; /* Margem ao redor do botão */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    border-radius: 8px; /* Cantos arredondados */
+    transition: transform 0.3s ease; 
+    line-height: 14px;
+     margin: 0; /* Remove qualquer margem extra */
+    display: inline-block; /* Garante que o botão siga o comportamento inline */
+
+    /* width: 80px; */
+
+}
+
+.tipoADM a, .tipoComum a{ 
+    color: white;
+    text-decoration: none;
+
+}
+
+.status_verde a, .status_vermelho a{ 
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+.status_verde{
+    background-color: rgb(53, 172, 53); /* Cor de fundo do botão */
+    
+}
+
+/* Estilo do botão quando o mouse passa sobre ele */
+.status_verde:hover{
+    background-color: #317c13; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); 
+}
+.status_vermelho{
+    background-color: rgb(211, 28, 28); /* Cor de fundo do botão */
+    
+}
+
+/* Estilo do botão quando o mouse passa sobre ele */
+.status_vermelho:hover{
+    background-color: #7c1313; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); 
+}
+
+
+
+
+.tipoADM, .TipoDesconto, .ServicoAdd{
+    background-color: var(--Azul-Cobalto); /* Cor de fundo do botão */
+    color: white;
+    
+}
+
+/* Estilo do botão quando o mouse passa sobre ele */
+.tipoADM:hover, .ServicoAdd{
+    background-color: #2c3f58; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); 
+}
+.tipoComum, .tipoOutros{
+    background-color: var(--Ambar); /* Cor de fundo do botão */
+    color: white;
+    
+}
+
+/* Estilo do botão quando o mouse passa sobre ele */
+.tipoComum:hover{
+    background-color: rgb(223, 155, 92); /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); 
+}
+
+
+
+
+#RemarcarModal label {
+    margin-bottom: 10px;
+  }
+  
+  #RemarcarModal input, #RemarcarModal select {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #RemarcarModal button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #RemarcarModal button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  
+
+
+
+/* Estilo para os inputs */
+ input[type="text"]{
+
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  font-family: 'Doppio One', serif;
+  border-radius: 11px;
+  background-color: #DEF4EF;
+}
+
+
+
+
+
+ input[type="text"]:focus{
+    background-color: #47c2ff;
+ 
+}
+
+
+
+input::placeholder, label {
+    font-family: 'Doppio One', serif;
+    font-size: 18px;
+  }
+  
+/* Estilo para o botão */
+.save-btn {
+  padding: 10px 20px;
+  background-color: rgb(79, 231, 79);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ .save-btn:hover {
+    background-color: rgb(0, 161, 0);
+    
+}
+
+.cancel-btn{
+    background-color: rgb(211, 28, 28); /* Cor de fundo do botão */
+    color: white;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+    
+}
+
+/* Estilo do botão quando o mouse passa sobre ele */
+.cancel-btn:hover{
+    background-color: #7c1313; /* Cor de fundo ao passar o mouse */
+
+}

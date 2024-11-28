@@ -1,0 +1,143 @@
+
+
+@media screen and (max-width: 768px) {
+
+    /* .main-content{
+        /* padding-top: 300px; /* Espaço para a navbar fixa (ajuste conforme necessário) */
+    /* }  */
+    
+    
+
+    .card-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .texto-card {
+        margin: 20px 0;
+      }
+  
+      section.principal {
+          grid-template-columns: 1fr;
+          margin: 0px 20px 40px 20px;
+          /* margin-top: -50px; */
+      }
+  
+      h1 {
+          font-size: 32px;
+      }
+  
+      .informacoes .text {
+          font-size: 18px;
+      }
+  
+      .container-foto .foto img {
+          max-width: 200px;
+      }
+
+      header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header nav .logo {
+        margin-bottom: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    header nav .links {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    header nav .links li {
+        margin: 10px 0;
+    }
+
+    header nav .links.show {
+        display: flex;
+    }
+
+    header nav .botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav .botoes button {
+        width: 100%;
+        text-align: center;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    
+    .informacoes .text {
+        font-size: 16px;
+    }
+    
+    .container-foto .foto img {
+        max-width: 150px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      }
+
+      .div-top {
+        width: 100%;
+        
+      }
+
+    .destaque img{
+        max-width: 300px;
+    }
+
+
+    .video-servicos-home .servico .informacoes-servico .texto-servico {
+        font-size: 18px;
+       
+    }
+    
+    .video-servicos-home .servico .saiba-mais {
+        bottom: 40px;
+    }
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* Proporção 16:9 */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    
+
+}
+
+
+      
+@media screen and (max-width: 400px) {
+    .titulo{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 433px) {
+    .video-servicos-home .servico .informacoes-servico .texto-servico {
+        font-size: 12px;
+       
+    }
+}
+
+

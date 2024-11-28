@@ -1,0 +1,205 @@
+/* Estilo para o contêiner principal do perfil */
+.perfil-container {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+    padding: 20px; /* Padding interno */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo para o contêiner da foto de perfil */
+.foto-perfil-container {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilo para a imagem de perfil */
+.foto-perfil-container img {
+    width: 200px; /* Largura da imagem */
+    height: 200px; /* Altura da imagem */
+    border-radius: 50%; /* Bordas arredondadas para formato circular */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+
+/* Estilo para o botão dentro do contêiner da foto de perfil */
+.foto-perfil-container button {
+    font-family: 'Doppio One', serif; /* Fonte personalizada */
+    font-size: 22px; /* Tamanho da fonte */
+    margin-top: 10px; /* Margem superior */
+    padding: 10px 20px; /* Padding interno */
+    border: none; /* Remove a borda padrão */
+    background-color: var(--gota-azul); /* Cor de fundo personalizada */
+    color: #fff; /* Cor do texto */
+    cursor: pointer; /* Cursor de ponteiro */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para a seção de informações do perfil */
+.info-perfil {
+    width: 100%; /* Largura total */
+    max-width: 600px; /* Largura máxima */
+}
+
+/* Estilo para o título dentro da seção de informações do perfil */
+.info-perfil h2 {
+    margin-bottom: 20px; /* Margem inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para a seção de informações do perfil */
+.perfil-info-section {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+}
+
+/* Estilo para cada seção individual dentro da seção de informações do perfil */
+.perfil-info-secao {
+    width: 100%; /* Largura total */
+    margin-bottom: 20px; /* Margem inferior */
+    padding: 20px; /* Padding interno */
+    border: 2px solid #000000; /* Borda preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    position: relative; /* Permite posicionamento absoluto dos filhos */
+}
+
+/* Estilo para itens de informação dentro da seção */
+.info-item {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilo para os parágrafos dentro dos itens de informação */
+.info-item p {
+    margin: 0; /* Remove a margem padrão */
+}
+
+/* Estilo para os títulos dentro das seções de informações */
+.perfil-info-secao h2 {
+    margin-bottom: 10px; /* Margem inferior */
+    text-align: center; /* Centraliza o texto */
+    font-size: 22px; /* Tamanho da fonte */
+}
+
+/* Estilo para os subtítulos dentro das seções de informações */
+h3 {
+    font-size: 14px; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilo para os parágrafos dentro das seções de informações */
+.perfil-info-secao p {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilo para o botão de edição */
+.edit-endereco-btn, .edit-info-btn{
+    background: none; /* Remove o fundo padrão */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Cursor de ponteiro */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o ícone dentro do botão de edição */
+.edit-endereco-btn i, .edit-info-btn i{
+    font-size: 22px; /* Tamanho do ícone */
+}
+
+/* Estilo para a linha horizontal */
+hr {
+    width: 100%; /* Largura total */
+    border: none; /* Remove bordas laterais */
+    border-top: 1px solid #000000; /* Borda superior preta */
+    margin: 20px 0; /* Margem superior e inferior */
+}
+
+/* Estilo para o título principal da página */
+h1 {
+    font-size: 30px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin: 50px; /* Margens ao redor */
+}
+
+
+
+/* Estilo para os inputs */
+.modal-content input[type="text"],
+.modal-content input[type="password"],
+.modal-content input[type="password"],
+.modal-content input[type="tel"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  font-family: 'Doppio One', serif;
+  border-radius: 11px;
+  background-color: #DEF4EF;
+}
+
+/* Altera a cor de fundo do campo de entrada quando está em foco */
+
+
+/* Define o estilo do texto do placeholder dentro do campo de entrada */
+.form input::placeholder {
+  font-family: 'Doppio One', serif;
+  font-size: 18px;
+}
+
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="email"]:focus,
+.modal-content input[type="password"]:focus,
+.modal-content input[type="tel"]:focus {
+    background-color: #47c2ff;
+ 
+}
+
+
+
+input::placeholder, label {
+    font-family: 'Doppio One', serif;
+    font-size: 18px;
+  }
+  
+/* Estilo para o botão */
+.modal-content .save-btn {
+  padding: 10px 20px;
+  background-color: rgb(79, 231, 79);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .save-btn:hover {
+    background-color: rgb(0, 161, 0);
+    
+}
+
+.password-container {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%; 
+}
+
+
+
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2em; /* Ajuste o tamanho conforme necessário */
+    color: #000; /* Ajuste a cor conforme necessário */
+}

@@ -1,0 +1,190 @@
+*{
+    font-family: 'Doppio One', serif;
+    
+  }
+
+
+/* Estiliza a seção à esquerda com uma cor de fundo verde escuro e texto branco */
+.left-section {
+    background-color: var(--azul-pastel-claro);
+    color: black;
+}
+
+/* Define o estilo do parágrafo dentro da seção de boas-vindas com margem superior e tamanho de fonte */
+
+
+/* Estiliza o botão de redirecionamento com borda branca e cor de texto branca */
+.redirect-button {
+    color: white;
+    border: 2px solid white;
+    width: 125px;
+}
+
+/* Define a cor e a aparência dos links dentro do botão de redirecionamento */
+.redirect-button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* Estiliza a seção à direita com uma cor de fundo verde água */
+.right-section {
+    background-color: var(--verde-agua-claro);
+}
+
+/* Define o estilo do contêiner do formulário com fundo branco, bordas arredondadas e altura fixada */
+.form-container {
+    background-color: white;
+    border-radius: 44px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    position: relative;
+    display: none; /* Inicialmente escondido */
+}
+
+/* Torna o contêiner do formulário visível quando a classe 'ativo' é adicionada */
+.form-container.ativo {
+    display: flex;
+}
+
+/* Estiliza o formulário dentro do contêiner com direção de coluna e centralização dos itens */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 85%; 
+    align-items: center;
+}
+
+
+.form label {
+    text-align: left;
+    width: 100%; /* Garante que o label ocupe toda a largura do contêiner */
+}
+
+/* Estiliza os campos de entrada dentro do formulário com padding, bordas arredondadas e fundo */
+.form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Doppio One', serif;
+    border-radius: 11px;
+    background-color: #DEF4EF;
+}
+
+/* Altera a cor de fundo do campo de entrada quando está em foco */
+.form input:focus {
+    background-color: #47c2ff;
+}
+
+/* Define o estilo do texto do placeholder dentro do campo de entrada */
+.form input::placeholder {
+    font-family: 'Doppio One', serif;
+    font-size: 18px;
+}
+
+/* Altera a cor do texto do placeholder quando o campo de entrada está em foco */
+.form input:focus::placeholder {
+    color: white;
+}
+
+/* Estiliza os botões dentro do formulário com cor de texto preta e efeitos de transição */
+.form button {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 135px;
+    height: 35px;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Doppio One', serif;
+    transition: transform 0.3s ease;
+}
+
+/* Define o efeito de aumento ao passar o mouse sobre o botão */
+.form button:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Estiliza o título dentro do formulário com tamanho de fonte e margem */
+.form h3 {
+    font-size: 22px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Define a cor dos ícones das redes sociais no rodapé */
+.instagram-icon, .location-icon, .youtube-icon, .email-icon {
+    color: white;
+}
+
+
+
+/* Esconde o campo de entrada de arquivos */
+.form input[type="file"] {
+    display: none;
+}
+
+
+
+/* Estiliza o botão de próximo e de criação de conta com uma cor de fundo verde */
+.concluir-btn {
+    background-color: rgb(79, 231, 79);
+}
+
+
+/* Define a cor do botão de próximo e de criação de conta ao passar o mouse */
+.concluir-btn:hover {
+    background-color: rgb(0, 161, 0);
+}
+
+
+
+.instagram-icon, .location-icon, .youtube-icon, .email-icon {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+
+
+  /* Estilo do container de informações de boas-vindas */
+.add-info {
+    display: flex; /* Utiliza flexbox para layout interno */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Alinha o texto ao centro */
+    height: 100%; /* Altura completa do contêiner pai */
+    width: 100%; /* Largura completa do contêiner pai */
+  }
+  
+  /* Estilo do texto de boas-vindas */
+  .info-h2 {
+    font-family: 'Doppio One', serif; /* Fonte serifada para o texto */
+    font-size: 30px; /* Tamanho da fonte */
+  }
+
+
+
+  .add-info p {
+  margin-top: 20px;
+    margin-bottom: 10px; /* Espaçamento entre os parágrafos */
+   
+}
+
+.add-info ul {
+    list-style-type: disc; /* Define o estilo da lista como bolinhas */
+    padding-left: 20px; /* Espaçamento à esquerda para alinhar os itens da lista */
+    margin-bottom: 20px; /* Espaçamento abaixo da lista */
+}
+
+.add-info ul li {
+    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+
+}
+

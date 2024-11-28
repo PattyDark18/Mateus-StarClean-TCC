@@ -1,0 +1,248 @@
+/* Estilos para o contêiner de cartões */
+.cards-container {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Alinha os cartões em coluna */
+    align-items: center; /* Centraliza os cartões horizontalmente */
+    gap: 20px; /* Espaçamento entre os cartões */
+    padding: 20px; /* Espaçamento interno do contêiner */
+}
+
+/* Estilos para cada cartão */
+.card {
+    display: flex; /* Usa flexbox para layout dentro do cartão */
+    background-color: #f0f0f0; /* Cor de fundo do cartão */
+    border-radius: 15px; /* Bordas arredondadas */
+    overflow: hidden; /* Oculta o conteúdo que excede as bordas do cartão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do cartão */
+    position: relative; /* Permite posicionamento absoluto dos elementos internos */
+    transition: transform 0.3s; /* Transição suave ao aplicar transformação */
+    margin: 20px; /* Espaçamento externo do cartão */
+    width: 100%; /* Largura total do cartão */
+    max-width: 1200px; /* Largura máxima do cartão */
+    height: 500px; /* Altura fixa do cartão */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
+
+/* Efeito de escala ao passar o mouse sobre o cartão */
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do cartão */
+}
+
+/* Estilos para a imagem de meio-moon */
+.half-moon-image {
+    width: 50%; /* Largura da metade do cartão */
+    overflow: hidden; /* Oculta a parte da imagem que sai das bordas */
+    display: flex; /* Usa flexbox para centralizar a imagem */
+    align-items: center; /* Alinha a imagem verticalmente no centro */
+    justify-content: center; /* Alinha a imagem horizontalmente no centro */
+}
+
+/* Estilo da imagem dentro da metade-moon */
+.half-moon-image img {
+    width: 100%; /* Largura completa do contêiner */
+    height: auto; /* Altura automática para manter a proporção */
+    object-fit: cover; /* Cobre o contêiner mantendo a proporção da imagem */
+}
+
+/* Estilos para o conteúdo do cartão */
+.card-content {
+    width: 50%; /* Largura da metade do cartão */
+    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: center; /* Alinha o conteúdo verticalmente no centro */
+    background-color: #d3d3d3; /* Cor de fundo do conteúdo do cartão */
+    border-radius: 25px; /* Bordas arredondadas */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra interna leve */
+    margin: 30px; /* Espaçamento externo */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1024px) {
+    .card {
+        flex-direction: column; /* Alinha os elementos em coluna em telas menores */
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+    }
+
+    .half-moon-image {
+        width: 100%; /* A imagem ocupa toda a largura do cartão */
+        clip-path: none; /* Remove o formato de meia-lua */
+        border-radius: 0; /* Remove bordas arredondadas */
+    }
+
+    .half-moon-image img {
+        width: 100%; /* A imagem ocupa toda a largura do cartão */
+        height: auto; /* Altura automática para manter a proporção */
+    }
+
+    .card-content {
+        width: 100%; /* O conteúdo ocupa toda a largura do cartão */
+        margin: 0; /* Remove a margem externa */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card {
+        width: calc(50% - 40px); /* Dois cartões por linha em telas médias */
+    }
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 1025px) {
+    .half-moon-image.left img {
+        clip-path: circle(75% at left center); /* Clipa a imagem em um círculo à esquerda */
+    }
+
+    .half-moon-image.right img {
+        clip-path: circle(75% at right center); /* Clipa a imagem em um círculo à direita */
+    }
+}
+/* Estilo do texto e listas dentro do conteúdo do cartão */
+.card-content p, .card-content ul {
+    font-size: 22px; /* Tamanho da fonte */
+    margin: 10px 0; /* Margem vertical */
+}
+
+/* Estilo das listas dentro do conteúdo do cartão */
+.card-content li {
+    list-style-type: disc; /* Tipo de marcador para listas */
+}
+
+/* Espaçamento adicional para listas não ordenadas */
+.card-content ul {
+    padding-left: 20px; /* Espaçamento à esquerda */
+}
+
+/* Margem inferior para itens de lista */
+.card-content ul li {
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilos para o slider de imagens */
+.card-slide {
+    background-color: #ffffff; /* Cor de fundo branca */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    position: relative; /* Permite posicionamento absoluto dos controles do slider */
+}
+
+/* Estilos para o contêiner do slider */
+.slide-container {
+    position: relative; /* Permite posicionamento absoluto dos controles */
+    width: 100%; /* Largura completa do contêiner */
+    max-width: 800px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    overflow: hidden; /* Oculta o conteúdo que excede o contêiner */
+    border-radius: 15px; /* Bordas arredondadas */
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+}
+
+/* Estilos para os slides do slider */
+.slides {
+    display: flex; /* Usa flexbox para alinhar slides horizontalmente */
+    transition: transform 0.5s ease-in-out; /* Transição suave ao alterar o slide */
+}
+
+/* Estilos para cada slide individual */
+.slide {
+    min-width: 100%;
+    max-height: 500px; /* Cada slide ocupa a largura completa do contêiner */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+/* Estilo das imagens dentro dos slides */
+.slide img {
+    width: 100%; /* Largura completa do slide */
+    height: auto; /* Altura automática para manter a proporção */
+    display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+/* Estilos para os botões de navegação do slider */
+.prev, .next {
+    position: absolute; /* Posiciona os botões em relação ao contêiner do slider */
+    top: 50%; /* Alinha verticalmente no meio */
+    transform: translateY(-50%); /* Ajusta a posição vertical dos botões */
+    background-color: var(--Ambar); /* Cor de fundo personalizada */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50%; /* Faz os botões circulares */
+    width: 50px; /* Largura dos botões */
+    height: 50px; /* Altura dos botões */
+    display: flex; /* Usa flexbox para centralizar o ícone */
+    justify-content: center; /* Alinha o ícone horizontalmente no centro */
+    align-items: center; /* Alinha o ícone verticalmente no centro */
+    font-size: 24px; /* Tamanho do ícone */
+    color: white; /* Cor do ícone */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    z-index: 2; /* Garante que os botões fiquem acima do slider */
+}
+
+/* Estilo do botão "anterior" */
+.prev {
+    left: 10px; /* Alinha o botão à esquerda */
+}
+
+/* Estilo do botão "próximo" */
+.next {
+    right: 10px; /* Alinha o botão à direita */
+}
+
+/* Efeito de hover para os botões de navegação */
+.prev:hover, .next:hover {
+    background-color: #fac385; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do título h3 */
+h3 {
+    font-size: 30px; /* Tamanho da fonte */
+    margin: 20px; /* Margem ao redor do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o contêiner de botões na parte inferior */
+.bottom-buttons {
+    display: flex; /* Usa flexbox para layout dos botões */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre os botões */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para os botões */
+.button {
+    text-decoration: none; /* Remove o sublinhado dos botões */
+    color: white; /* Cor do texto */
+    padding: 15px 30px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 22px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    transition: transform 0.3s ease; /* Transição suave ao aplicar transformação */
+}
+
+/* Efeito de escala ao passar o mouse sobre os botões */
+.button:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do botão */
+}
+
+/* Estilos específicos para o botão "ver serviços" */
+.view-services {
+    background-color: #ffc107; /* Cor de fundo amarela */
+}
+
+/* Estilos específicos para o botão "agendar serviço" */
+.schedule-service {
+    background-color: #28a745; /* Cor de fundo verde */
+}
+
+/* Efeito de hover para o botão "ver serviços" */
+.view-services:hover {
+    background-color: #cfa011; /* Cor de fundo ao passar o mouse */
+}
+
+/* Efeito de hover para o botão "agendar serviço" */
+.schedule-service:hover {
+    background-color: #15772c; /* Cor de fundo ao passar o mouse */
+}

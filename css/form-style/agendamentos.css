@@ -1,0 +1,583 @@
+*{
+  font-family: 'Doppio One', serif;
+}
+
+
+
+
+.form-container {
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.form-container.active {
+  display: block;
+}
+.form-container h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.form-container input {
+    width: calc(100% - 22px); /* Ajusta o width para compensar o padding e border */
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+
+
+.left-section{
+    background-color: #3A4A6B;
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+.right-section {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .instagram-icon, .location-icon, .youtube-icon, .email-icon .whatsapp-icon {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-column i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column span {
+    font-size: 14px;
+  }
+
+
+
+  .form-container {
+    display: none;
+}
+
+
+.form-container select,
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: white;
+
+ 
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    /* background-color: #53A198; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+   
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+
+
+.returnFormButton{
+  background-color: rgba(248, 63, 63, 0.925);
+  
+}
+
+.NextFormButton, .Concluir-btn{
+  background-color: rgb(79, 231, 79);
+  
+ 
+}
+
+.returnFormButton:hover{
+  background-color: rgb(218, 1, 1);
+}
+
+.NextFormButton:hover, .concluir-btn{
+  background-color: rgb(0, 161, 0);
+}
+
+
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          width: 100%; 
+      }
+
+      .dropbtn {
+          background-color: #ffffff;
+          color: rgb(0, 0, 0); 
+          padding: 10px; 
+          font-size: 16px;
+          border: none; 
+          border-radius: 15px; 
+          cursor: pointer; 
+          transition: background-color 0.3s; 
+          width: 100%; 
+          box-sizing: border-box; 
+      }
+
+      .dropbtn:hover {
+          background-color: #c3c3c3; 
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute; 
+          background-color: #ffffff; 
+          color: #000000; 
+          width: 100%; 
+          max-height: 200px; 
+          overflow-y: auto; 
+          /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+          z-index: 1; 
+          border-radius: 15px;
+          padding: 8px 0; 
+          box-sizing: border-box;
+          
+      }
+
+      .dropdown-content label {
+          display: flex; 
+          align-items: center; 
+          display: block; 
+          padding: 8px 16px;
+          cursor: pointer; 
+          transition: background-color 0.2s; 
+      }
+
+
+
+      .dropdown-content label:hover {
+          background-color: #f1f1f1; 
+      }
+
+      .dropdown:hover .dropdown-content {
+          display: block; 
+      }
+
+      .dropdown:hover .dropbtn {
+          background-color: #c9c9c9;
+      }
+
+
+.show {
+  display: block;
+}
+/* Define a fonte padrão para todo o documento */
+* {
+  font-family: 'Doppio One', serif;
+}
+
+/* Estiliza o contêiner do formulário com padding, margem e largura máxima */
+.form-container {
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  display: none; /* Inicialmente escondido */
+}
+
+/* Mostra o contêiner do formulário quando a classe 'active' é adicionada */
+.form-container.active {
+  display: block;
+}
+
+/* Estiliza o título do formulário */
+.form-container h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estiliza os campos de entrada dentro do formulário */
+.form-container input {
+  width: calc(100% - 22px); /* Ajusta o width para compensar padding e border */
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: white;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+/* Estiliza a seção à esquerda com cor de fundo e texto branco */
+.left-section {
+  background-color: #3A4A6B;
+  color: white;
+}
+
+/* Define a cor dos links */
+a {
+  color: white;
+}
+
+/* Estiliza a seção à direita para centralizar o conteúdo */
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Faz com que a imagem de seção cubra toda a área disponível */
+#section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Estiliza o rodapé para estar no fundo e centralizar o conteúdo */
+.footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* Define o estilo dos ícones nas redes sociais e outras seções do rodapé */
+.instagram-icon, .location-icon, .youtube-icon, .email-icon {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estiliza o grid do rodapé com colunas responsivas */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Estiliza cada coluna do rodapé */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Define o tamanho dos ícones e a margem inferior dentro da coluna do rodapé */
+.footer-column i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Define o tamanho da fonte para o texto na coluna do rodapé */
+.footer-column span {
+  font-size: 14px;
+}
+
+/* Estiliza o botão de seleção e entrada no formulário */
+.form-container select,
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+/* Estiliza os botões dentro do formulário */
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+}
+
+/* Estiliza o contêiner dos botões para distribuí-los horizontalmente */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Estiliza o botão de retorno com uma cor de fundo específica */
+.returnFormButton {
+  background-color: rgba(248, 63, 63, 0.925);
+}
+
+/* Estiliza o botão de próximo com uma cor de fundo específica */
+.NextFormButton {
+  background-color: rgb(79, 231, 79);
+}
+
+/* Define a cor do botão de retorno ao passar o mouse */
+.returnFormButton:hover {
+  background-color: rgb(218, 1, 1);
+}
+
+/* Define a cor do botão de próximo ao passar o mouse */
+.NextFormButton:hover {
+  background-color: rgb(0, 161, 0);
+}
+
+/* Estiliza o dropdown para exibir a lista de opções */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Estiliza o botão do dropdown */
+.dropbtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Define a cor do botão do dropdown ao passar o mouse */
+.dropbtn:hover {
+  background-color: #c3c3c3;
+}
+
+/* Estiliza o conteúdo do dropdown, escondendo-o inicialmente */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+  border-radius: 15px;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+
+/* Estiliza os itens dentro do conteúdo do dropdown */
+.dropdown-content label {
+  display: flex;
+  align-items: center;
+  display: block;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Define a cor do item do dropdown ao passar o mouse */
+.dropdown-content label:hover {
+  background-color: #f1f1f1;
+}
+
+/* Exibe o conteúdo do dropdown ao passar o mouse sobre o dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Define a cor do botão do dropdown ao passar o mouse */
+.dropdown:hover .dropbtn {
+  background-color: #c9c9c9;
+}
+
+/* Exibe o elemento com a classe 'show' */
+.show {
+  display: block;
+}
+
+
+.input-error {
+  border: 2px solid red;
+}
+
+
+
+
+.modal-agendamento {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  
+}
+
+.modal-agendamento-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+
+
+
+
+.modal-agendamento {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-agendamento-content {
+  background: linear-gradient(#ffffff, var(--cinza-azulado)); ;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+/* Estilo para o modal com fundo gradiente */
+#confirmationModal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+}
+
+
+
+/* Estilo para cada caixa de confirmação com borda preta */
+.caixa-confirmacao {
+  border: 1px solid #000; /* Borda preta */
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 15px; /* Espaço entre as caixas */
+}
+
+/* Estilo para os botões */
+button {
+
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+#confirmButton {
+  background-color: #4CAF50; /* Cor de fundo verde */
+}
+
+#cancelButton {
+  background-color: #f44336; /* Cor de fundo vermelho */
+}
+
+#cancelButton:hover {
+  background-color: #e53935; /* Cor de fundo vermelho mais escuro ao passar o mouse */
+}

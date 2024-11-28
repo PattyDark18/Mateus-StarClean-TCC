@@ -1,0 +1,123 @@
+/* Estilos para o contêiner de cartões */
+.cards-container {
+  display: flex; /* Usa flexbox para layout */
+  flex-wrap: wrap; /* Permite que os cartões se movam para a próxima linha se necessário */
+  gap: 20px; /* Espaçamento entre os cartões */
+  padding: 0 20px; /* Espaçamento interno nas laterais do contêiner */
+  justify-content: center; /* Centraliza os cartões horizontalmente */
+  margin-bottom: 100px; /* Espaçamento inferior do contêiner */
+}
+
+/* Estilos para cartões de serviço ativos */
+.card-servico.ativo {
+  display: flex; /* Exibe o cartão quando ativo */
+}
+
+/* Estilos para cada cartão de serviço */
+.card-servico {
+  width: calc(33.33% - 20px); /* Largura do cartão ajustada para caber 3 cartões por linha, considerando o gap */
+  position: relative; /* Permite posicionamento absoluto dos elementos internos */
+  overflow: hidden; /* Oculta o conteúdo que excede as bordas do cartão */
+  flex-direction: column; /* Alinha o conteúdo em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+  display: none; /* Oculta o cartão por padrão */
+}
+
+/* Estilos para a imagem dentro do cartão de serviço */
+.card-servico img {
+  width: 400px; /* Largura fixa */
+  height: 400px; /* Altura fixa */
+  border-radius: 45px; /* Bordas arredondadas na imagem */
+  border: 3px white solid; /* Borda branca ao redor da imagem */
+  display: block; /* Garante que a imagem seja um bloco para conter o hover */
+  object-fit: cover; /* Mantém a proporção da imagem e evita distorção */
+}
+
+/* Estilos para o conteúdo do cartão */
+.card-content {
+  position: relative; /* Contexto para o botão de "saiba mais" */
+}
+
+/* Estilos para o título dentro do conteúdo do cartão */
+.titulo {
+  font-size: 30px; /* Tamanho da fonte do título */
+  margin: 20px 0; /* Margem superior e inferior do título */
+}
+
+/* Estilos para o botão "saiba mais" */
+.saiba-mais {
+  display: none; /* Inicialmente oculto */
+  position: absolute; /* Posiciona o botão relativo ao contêiner do cartão */
+  bottom: 20px; /* Alinha o botão na parte inferior do cartão */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição horizontal para centralizar */
+  background-color: rgb(255, 255, 255); /* Cor de fundo branca */
+  color: rgb(0, 0, 0); /* Cor do texto preta */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 15px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove o sublinhado */
+  font-family: 'Doppio One', serif; /* Fonte personalizada */
+  font-size: 18px; /* Tamanho da fonte */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Exibe o botão "saiba mais" ao passar o mouse sobre o cartão */
+.card-servico:hover .saiba-mais {
+  display: block; /* Torna o botão visível */
+  z-index: 1;
+}
+
+/* Estilos para o título principal */
+h1 {
+  font-size: 30px; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  margin: 50px; /* Margem ao redor do título */
+}
+
+/* Estilo para a sobreposição preta */
+.hover-info {
+  position: absolute; /* Posiciona sobre a imagem */
+  top: 0;
+  left: 0;
+  width: 100%; /* Largura total do contêiner */
+  height: 100%; /* Altura total do contêiner */
+  background-color : rgba(0, 0, 0, 0.7); /* Preto com opacidade */
+  color: white; /* Cor do texto */
+  border-radius: 45px; /* Borda arredondada para a sobreposição */
+  display: flex; /* Usa flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 20px; /* Padding interno */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura/altura */
+  z-index: 1; /* Coloca a sobreposição acima da imagem */
+}
+
+/* Estilo para mostrar a sobreposição ao passar o mouse */
+.card-content:hover .hover-info {
+  opacity: 1; /* Torna a sobreposição visível */
+}
+
+.card-servico p {
+  overflow: hidden; /* Oculta o texto que ultrapassa os limites do card */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  text-overflow: ellipsis; /* Exibe "..." no final do texto que exceder */
+  width: 100%; /* Certifica que a largura seja respeitada */
+  display: block; /* Garante que o comportamento de bloco seja aplicado */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .card-servico {
+    width: 100%; /* Um cartão por linha em telas menores */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-servico {
+    width: calc(50% - 20px); /* Dois cartões por linha em telas médias */
+  }
+}

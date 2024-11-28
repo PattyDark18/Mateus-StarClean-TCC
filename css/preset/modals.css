@@ -1,0 +1,94 @@
+*{
+    font-family: 'Doppio One', serif;
+    
+  }
+/* Estilos para o modal */
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed; /* Posiciona o modal em relação à janela de visualização */
+    z-index: 1; /* Garante que o modal fique acima de outros elementos */
+    left: 0; /* Alinha o modal à esquerda da janela de visualização */
+    top: 0; /* Alinha o modal ao topo da janela de visualização */
+    width: 100%; /* Largura completa da janela de visualização */
+    height: 100%; /* Altura completa da janela de visualização */
+    overflow: auto; /* Adiciona rolagem se o conteúdo for maior que a altura do modal */
+    background-color: rgba(0,0,0,0.4); /* Cor de fundo preta com opacidade para criar um efeito de sobreposição */
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+    background-color: #fefefe; /* Cor de fundo branca para o conteúdo do modal */
+    margin: 15% auto; /* Margem superior de 15% da altura da janela e centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #888; /* Borda cinza clara ao redor do conteúdo do modal */
+    width: 600px; /* Largura fixa do conteúdo do modal */
+    height: 100px; /* Altura fixa do conteúdo do modal */
+    border-radius: 30px; /* Bordas arredondadas */
+    padding-bottom: 100px; /* Espaçamento interno adicional na parte inferior */
+    text-align: center;
+}
+
+/* Estilo do botão de fechar */
+.close {
+    color: #aaa; /* Cor inicial do texto do botão de fechar */
+    float: right; /* Alinha o botão de fechar à direita */
+    font-size: 28px; /* Tamanho da fonte do botão de fechar */
+    font-weight: bold; /* Fonte em negrito */
+}
+
+/* Estilo do botão de fechar ao passar o mouse e ao focar */
+.close:hover,
+.close:focus {
+    color: black; /* Cor do texto ao passar o mouse ou ao focar */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+
+.modal-content button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilo para o botão Confirmar */
+.confirmButton {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.confirmButton:hover {
+    background-color: #45a049; /* Verde escuro ao passar o mouse */
+}
+
+/* Estilo para o botão Cancelar */
+.cancelButton {
+    background-color: #f44336; /* Vermelho */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+    background-color: #d32f2f; /* Vermelho escuro ao passar o mouse */
+}
+
+/* Estilo de foco nos botões para acessibilidade */
+.modal-content button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+#preview-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Deixando a imagem redonda */
+    object-fit: cover; /* Garante que a imagem preencha o espaço circular */
+    margin: 20px auto; /* Centralizando a imagem */
+}

@@ -1,0 +1,259 @@
+/* Estilo geral do corpo da página */
+body {
+  background: linear-gradient(#ffffff, var(--cinza-azulado)); /* Gradiente de cor de fundo de branco para azul acinzentado */
+  background-size: 100% 150%; /* Tamanho do fundo gradiente */
+  font-family: 'Doppio One', serif; /* Fonte padrão serifada */
+  margin: 0 auto; /* Remove a margem padrão e centraliza horizontalmente */
+}
+
+/* Estilo do elemento de navegação no cabeçalho */
+header nav {
+  background-color: var(--verde-pinho); /* Cor de fundo verde escuro */
+  display: flex; /* Utiliza flexbox para layout */
+  align-items: center; /* Alinha itens verticalmente no centro */
+  padding: 10px 20px; /* Espaçamento interno */
+  width: 100%; /* Largura completa do elemento pai */
+}
+
+/* Estilo dos links de navegação */
+header nav .links {
+  display: flex; /* Utiliza flexbox para layout */
+  margin-left: 20px; /* Margem esquerda */
+  flex-grow: 1; /* Permite que o contêiner cresça para preencher o espaço disponível */
+}
+
+/* Estilo dos itens de lista dentro dos links de navegação */
+header nav .links li {
+  margin-right: 20px; /* Margem direita entre os itens */
+}
+
+/* Estilo dos links dentro dos itens de lista */
+header nav .links li a {
+  color: white; /* Cor do texto dos links */
+  font-size: 20px; /* Tamanho da fonte dos links */
+}
+
+/* Estilo dos botões no cabeçalho de navegação */
+header nav .botoes {
+  display: flex; /* Utiliza flexbox para layout */
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo dos links dos botões no cabeçalho */
+header nav .botoes a {
+  color: #000; /* Cor do texto dos botões */
+  border: none; /* Remove a borda padrão dos botões */
+  padding: 10px 20px; /* Espaçamento interno dos botões */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  font-size: 16px; /* Tamanho da fonte dos botões */
+  border-radius: 8px; /* Bordas arredondadas */
+  font-family: 'Doppio One', serif; /* Fonte serifada para o texto */
+  text-decoration: none; /* Remove sublinhado do texto */
+}
+
+/* Estilo do botão de cadastrar */
+header nav .botoes .cadastrar {
+  background-color: var(--verde-agua-claro); /* Cor de fundo ciano claro */
+}
+
+/* Estilo do botão de login */
+header nav .botoes .login {
+  background-color: #ffff; /* Cor de fundo branca */
+}
+
+/* Estilo do botão de cadastrar ao passar o mouse */
+header nav .botoes .cadastrar:hover {
+  background-color: #7ac2b6; /* Cor de fundo ao passar o mouse */
+  color: white; /* Cor do texto ao passar o mouse */
+  transition: 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Estilo do botão de login ao passar o mouse */
+header nav .botoes .login:hover {
+  background-color: #889599; /* Cor de fundo ao passar o mouse */
+  color: white; /* Cor do texto ao passar o mouse */
+  transition: 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Estilo do conteúdo do dropdown dentro dos itens de lista */
+header nav .links li .dropdown-content {
+  display: none; /* Oculta o dropdown por padrão */
+  position: absolute; /* Posiciona o dropdown fora do fluxo normal do documento */
+  background-color: #ffffff; /* Cor de fundo branca */
+  min-width: 160px; /* Largura mínima do dropdown */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra do dropdown */
+  z-index: 1; /* Garante que o dropdown fique acima de outros elementos */
+}
+
+/* Estilo dos itens de lista dentro do dropdown */
+header nav .links li .dropdown-content li {
+  margin: 0; /* Remove a margem dos itens de lista no dropdown */
+}
+
+/* Estilo dos links dentro do dropdown */
+header nav .links li .dropdown-content li a {
+  padding: 12px 16px; /* Espaçamento interno dos links no dropdown */
+  text-decoration: none; /* Remove sublinhado do texto */
+  display: block; /* Faz com que o link ocupe toda a largura do item */
+  color: rgb(0, 0, 0); /* Cor do texto dos links */
+}
+
+/* Estilo do link dentro do dropdown ao passar o mouse */
+header nav .links li .dropdown-content li a:hover {
+  background-color: #e4e4e4; /* Cor de fundo ao passar o mouse */
+  transition: 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Exibe o dropdown quando o item de lista é hover */
+header nav .links li:hover .dropdown-content {
+  display: block; /* Torna o dropdown visível */
+}
+
+/* Estilo do logotipo */
+.logo {
+  width: 110px; /* Largura do logotipo */
+}
+
+/* Estilo do rodapé */
+footer {
+  margin-top: auto;
+  position: relative;
+  background-color: var(--verde-pinho); /* Cor de fundo verde escuro */
+  display: flex; /* Utiliza flexbox para layout */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  padding: 20px 0; /* Espaçamento interno vertical */
+}
+
+/* Estilo dos ícones no rodapé */
+.instagram-icon, .location-icon, .youtube-icon, .email-icon,  a .whatsapp-icon {
+  color: white; /* Cor dos ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+/* Estilo da grade do rodapé */
+.footer-grid {
+  display: grid; /* Utiliza grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Define colunas responsivas */
+  gap: 20px; /* Espaçamento entre as colunas */
+  max-width: 800px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo das colunas do rodapé */
+.footer-column {
+  display: flex; /* Utiliza flexbox para layout interno */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilo dos ícones dentro das colunas do rodapé */
+.footer-column i {
+  font-size: 24px; /* Tamanho dos ícones */
+  margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilo do texto dentro das colunas do rodapé */
+.footer-column span {
+  font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de menu (hamburger) para dispositivos móveis */
+.hamburger {
+  display: none; /* Oculta o botão de menu por padrão */
+  font-size: 30px; /* Tamanho da fonte do ícone */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  margin-right: auto; /* Margem direita automática para alinhar à esquerda */
+  color: #ffff; /* Cor do ícone */
+}
+
+/* Estilo do dropdown do perfil */
+.dropdown-perfil {
+  position: relative; /* Permite o posicionamento absoluto do conteúdo dropdown */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  display: flex; /* Utiliza flexbox para layout */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilo do conteúdo do dropdown do perfil */
+.dropdown-perfil-content {
+  position: absolute; /* Posiciona o dropdown fora do fluxo normal do documento */
+  top: -30px; /* Distância do topo */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-60%); /* Ajusta a posição horizontalmente */
+  margin-top: 2px; /* Margem superior */
+  display: none; /* Oculta o dropdown por padrão */
+  background-color: #f9f9f9; /* Cor de fundo clara */
+  min-width: 200px; /* Largura mínima do dropdown */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra do dropdown */
+  z-index: 1; /* Garante que o dropdown fique acima de outros elementos */
+  padding: 10px; /* Espaçamento interno */
+  margin-right: 20px; /* Margem direita */
+  top: 100%; /* Ajusta a posição vertical */
+  border-radius: 15px; /* Bordas arredondadas */
+}
+
+/* Estilo dos links dentro do dropdown do perfil */
+.dropdown-perfil-content a {
+  color: black; /* Cor do texto dos links */
+  padding: 12px 16px; /* Espaçamento interno dos links */
+  text-decoration: none; /* Remove sublinhado do texto */
+  display: block; /* Faz com que o link ocupe toda a largura do item */
+}
+
+/* Estilo do link dentro do dropdown do perfil ao passar o mouse */
+.dropdown-perfil-content a:hover {
+  background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
+
+/* Exibe o conteúdo do dropdown do perfil quando o elemento é hover */
+.dropdown-perfil:hover .dropdown-perfil-content {
+  display: block; /* Torna o dropdown visível */
+}
+
+/* Estilo dos botões adicionais */
+.botoes {
+  display: flex; /* Utiliza flexbox para layout */
+  align-items: center; /* Alinha itens verticalmente no centro */
+}
+
+/* Estilo do botão de dropdown dentro dos botões */
+.botoes .dropbtn {
+  color: white; /* Cor do texto dos botões */
+  font-size: 20px; /* Tamanho da fonte dos botões */
+  text-decoration: underline; /* Sublinhado do texto */
+  text-align: center; /* Alinha o texto ao centro */
+  display: flex; /* Utiliza flexbox para layout */
+  align-items: center; /* Alinha itens verticalmente no centro */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  margin-right: 50px; /* Margem direita */
+}
+
+/* Estilo das imagens dentro dos botões de dropdown */
+.botoes img {
+  width: 35px; /* Largura das imagens */
+  height: 35px; /* Altura das imagens */
+  border-radius: 50%; /* Bordas arredondadas */
+  margin-right: 10px; /* Margem direita */
+  object-fit: cover;
+}
+
+/* Estilo das informações do perfil */
+.perfil-info {
+  display: flex; /* Utiliza flexbox para layout */
+  align-items: center; /* Alinha itens verticalmente no centro */
+  padding: 10px; /* Espaçamento interno */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+/* Estilo das imagens do perfil */
+.perfil-info img {
+  width: 60px; /* Largura das imagens do perfil */
+  height: 60px; /* Altura das imagens do perfil */
+  border-radius: 50%; /* Bordas arredondadas */
+  margin-bottom: 10px; /* Margem inferior */
+}
+

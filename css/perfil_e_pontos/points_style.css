@@ -1,0 +1,359 @@
+/* Define a fonte padrão para toda a página */
+* {
+  font-family: 'Doppio One', serif;
+}
+
+/* Estilo do contêiner principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para divs superior e inferior do contêiner */
+.div-top, .div-bottom {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo da div superior com imagem de fundo */
+.div-top {
+  background-image: url('../../src/img/testes/agendamento2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+
+/* Estilo para elementos de anúncio com efeito de transição */
+.AnnouncePts {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.AnnouncePts:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+  border-radius: 15px;
+}
+
+/* Estilo para imagem centralizada na div superior */
+.central-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto;
+}
+
+/* Estilo para o título h2 */
+h2 {
+  font-size: 30px;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 150px;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: var(--verde-pinho);
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* Estilo para ícones no rodapé */
+.instagram-icon, .location-icon, .youtube-icon, .email-icon {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilo para o grid de colunas do rodapé */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Estilo para colunas do rodapé */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para ícones dentro das colunas do rodapé */
+.footer-column i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para texto dentro das colunas do rodapé */
+.footer-column span {
+  font-size: 14px;
+}
+
+/* Estilo para o ícone do menu hamburguer (oculto por padrão) */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: auto;
+  color: #ffff;
+}
+
+/* Estilo da div inferior */
+.div-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: transparent;
+}
+
+/* Estilo para pontos de vantagens */
+.vantagens-pts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 100%;
+}
+
+/* Estilo para o título principal */
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+/* Estilo para lista de vantagens */
+.vantagens-pts ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #000000;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+/* Estilo para imagens de estrelas em vantagens */
+.vantagens-pts .star-vantagens {
+  width: 300px;
+  height: auto;
+  margin-left: 20px;
+}
+
+/* Estilo para a seção "Como Funciona" */
+
+/* Estilo para o contêiner de estrelas na trilha */
+.container-Star-Trail {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo para o contêiner de estrelas */
+.stars-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Estilo para estrelas */
+.star {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+}
+
+.star img {
+  width: 80%;
+}
+
+/* Estilo para o valor das estrelas */
+.star-value {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+/* Posiciona as estrelas com base na porcentagem */
+.star[data-value="0"] {
+  left: 0%;
+}
+
+.star[data-value="100"] {
+  left: 20%;
+}
+
+.star[data-value="250"] {
+  left: 50%;
+}
+
+.star[data-value="500"] {
+  left: 100%;
+}
+
+/* Estilo para a barra de progresso */
+.progress-bar {
+  width: 100%;
+  height: 50px;
+  background-color: var(--Azul-Cobalto);
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+/* Estilo para o progresso dentro da barra de progresso */
+.progress {
+  background-color: #ffc107;
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+}
+
+/* Estilo para o contêiner do cupom */
+.div-cupom {
+  margin-top: 100px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilo para o título do cupom */
+.div-cupom h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Estilo para o contêiner do cupom */
+.cupom-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo para a caixa do cupom */
+.cupom {
+  background-color: var(--verde-agua-claro);
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Estilo para o campo de entrada do cupom */
+.cupom input[type="text"] {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  background-color: transparent;
+  color: #000000;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  outline: none;
+}
+
+/* Estilo para o botão "Resgatar" */
+.resgatar-btn {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  font-weight: 700;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para o botão "Resgatar" ao passar o mouse */
+.resgatar-btn:hover {
+  background-color: #f1f1f1;
+  color: #00473e;
+}
+
+
+
+/* Estilo para o contêiner das imagens */
+.Como-Funciona {
+  display: flex; /* Flexbox para layout */
+  justify-content: center; /* Centraliza as imagens na linha */
+  align-items: center; /* Alinha verticalmente */
+  gap: 15px; /* Espaço entre as imagens */
+  padding: 20px; /* Padding interno */
+  flex-wrap: wrap; /* Permite que o conteúdo quebre para a próxima linha, se necessário */
+}
+
+/* Estilo para cada passo na seção "Como Funciona" */
+.ComoFuncionaPassos {
+  position: relative; /* Permite posicionamento absoluto dos filhos */
+  width: 300px; /* Largura das imagens */
+  height: 400px; /* Altura das imagens */
+  border-radius: 45px; /* Bordas arredondadas */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse a borda arredondada */
+  flex-shrink: 0; /* Impede que as imagens encolham */
+}
+
+/* Estilo para a imagem dentro do contêiner */
+.ComoFuncionaPassos img {
+  width: 100%; /* Largura total do contêiner */
+  height: 100%; /* Altura total do contêiner */
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+}
+
+/* Estilo para a sobreposição preta */
+.ComoFuncionaPassos .hover-info {
+  position: absolute; /* Posiciona sobre a imagem */
+  top: 0;
+  left: 0;
+  width: 100%; /* Largura total do contêiner */
+  height: 100%; /* Altura total do contêiner */
+  background-color: rgba(0, 0, 0, 0.7); /* Preto com opacidade */
+  color: white; /* Cor do texto */
+  border-radius: 45px; /* Borda arredondada para a sobreposição */
+  display: flex; /* Usa flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 20px; /* Padding interno */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura/altura */
+  z-index: 1; /* Coloca a sobreposição acima da imagem */
+}
+
+/* Estilo para mostrar a sobreposição ao passar o mouse */
+.ComoFuncionaPassos:hover .hover-info {
+  opacity: 1; /* Torna a sobreposição visível */
+}

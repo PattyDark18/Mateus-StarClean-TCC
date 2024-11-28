@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+
+    background-color: var(--azul-pastel-claro);
+}
+.return {
+    position: relative; /* Altera a posição para relativa */
+
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+/* Estiliza o contêiner do formulário com fundo branco, bordas arredondadas e altura fixa */
+.form-container {
+    background-color: white;
+    border-radius: 20px; /* Bordas arredondadas */
+    height: auto; /* Ajusta a altura automaticamente */
+    width: 500px; /* Largura menor */
+    height: 300px;
+    padding: 30px; /* Espaçamento interno */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+/* Estiliza o formulário dentro do contêiner */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Largura total do contêiner */
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* Estiliza os campos de entrada */
+.form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    width: 100%;
+    font-family: 'Doppio One', serif;
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #80BCB5; /* Verde água claro */
+    border: none; /* Remove a borda padrão */
+}
+
+/* Altera a cor de fundo dos campos de entrada quando estão em foco */
+.form input:focus {
+    background-color: #47c2ff; /* Azul claro */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estiliza o botão de envio */
+.form input[type="submit"] {
+    background-color: var(--Ambar); /* Amarelo */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 50px; /* Aumenta a altura do botão */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    font-family: 'Doppio One', serif;
+}
+
+/* Define a cor de fundo do botão ao passar o mouse */
+.form input[type="submit"]:hover {
+    background-color: #fac385; /* Amarelo claro */
+}
+
+
+
+.password-container {
+    position: relative;
+}
+
+/* Estiliza o campo de entrada da senha para incluir espaço para o ícone de mostrar/ocultar senha */
+.password-container input {
+    width: 100%;
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+/* Estiliza o ícone para mostrar/ocultar senha com posição absoluta e cursor de ponteiro */
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2em; /* Ajuste o tamanho conforme necessário */
+    color: #000; /* Ajuste a cor conforme necessário */
+}

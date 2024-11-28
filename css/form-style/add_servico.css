@@ -1,0 +1,247 @@
+*{
+    font-family: 'Doppio One', serif;
+  }
+
+
+/* Estiliza a seção à esquerda com uma cor de fundo verde escuro e texto branco */
+.left-section {
+    background-color: var(--cinza-azulado);
+    color: black;
+}
+
+/* Define o estilo do parágrafo dentro da seção de boas-vindas com margem superior e tamanho de fonte */
+
+
+/* Estiliza o botão de redirecionamento com borda branca e cor de texto branca */
+.redirect-button {
+    color: white;
+    border: 2px solid white;
+    width: 125px;
+}
+
+/* Define a cor e a aparência dos links dentro do botão de redirecionamento */
+.redirect-button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* Estiliza a seção à direita com uma cor de fundo verde água */
+.right-section {
+    background-color: var(--gota-azul);
+}
+
+/* Define o estilo do contêiner do formulário com fundo branco, bordas arredondadas e altura fixada */
+.form-container {
+    background-color: white;
+    border-radius: 44px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    position: relative;
+    display: none; /* Inicialmente escondido */
+}
+
+/* Torna o contêiner do formulário visível quando a classe 'ativo' é adicionada */
+.form-container.ativo {
+    display: flex;
+}
+
+/* Estiliza o formulário dentro do contêiner com direção de coluna e centralização dos itens */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 85%; 
+    align-items: center;
+}
+
+
+.form label {
+    text-align: left;
+    width: 100%; /* Garante que o label ocupe toda a largura do contêiner */
+}
+
+/* Estiliza os campos de entrada dentro do formulário com padding, bordas arredondadas e fundo */
+.form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Doppio One', serif;
+    border-radius: 11px;
+    background-color: #DEF4EF;
+}
+
+/* Altera a cor de fundo do campo de entrada quando está em foco */
+.form input:focus {
+    background-color: #47c2ff;
+}
+
+/* Define o estilo do texto do placeholder dentro do campo de entrada */
+.form input::placeholder {
+    font-family: 'Doppio One', serif;
+    font-size: 18px;
+}
+
+/* Altera a cor do texto do placeholder quando o campo de entrada está em foco */
+.form input:focus::placeholder {
+    color: white;
+}
+
+/* Estiliza os botões dentro do formulário com cor de texto preta e efeitos de transição */
+.form button {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 135px;
+    height: 35px;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Doppio One', serif;
+    transition: transform 0.3s ease;
+}
+
+/* Define o efeito de aumento ao passar o mouse sobre o botão */
+.form button:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Estiliza o título dentro do formulário com tamanho de fonte e margem */
+.form h3 {
+    font-size: 22px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Define a cor dos ícones das redes sociais no rodapé */
+.instagram-icon, .location-icon, .youtube-icon, .email-icon{
+    color: white;
+}
+
+
+
+/* Esconde o campo de entrada de arquivos */
+.form input[type="file"] {
+    display: none;
+}
+
+
+
+
+
+/* Estiliza o rótulo do campo de entrada de arquivos com padding e efeitos de transição */
+.file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Doppio One', serif;
+    border-radius: 11px;
+    background-color: #DEF4EF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #333;
+    margin-bottom: 20px;
+    padding-right: 30px; /* Espaço para o ícone */
+    position: relative;
+}
+
+.ok-icon {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: green;
+    font-size: 1.2em;
+
+    
+}
+
+.file-label .ok-icon {
+    font-size: 1.5em; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+
+/* Define a cor de fundo e do texto do rótulo ao passar o mouse */
+.file-label:hover {
+    background-color: #47c2ff;
+    color: #fff;
+}
+
+
+
+/* Estiliza o botão de retorno com uma cor de fundo vermelha */
+.returnFormButton {
+    background-color: rgba(248, 63, 63, 0.925);
+}
+
+/* Estiliza o botão de próximo e de criação de conta com uma cor de fundo verde */
+.NextFormButton {
+    background-color: rgb(79, 231, 79);
+}
+
+/* Define a cor do botão de retorno ao passar o mouse */
+.returnFormButton:hover {
+    background-color: rgb(218, 1, 1);
+}
+
+/* Define a cor do botão de próximo e de criação de conta ao passar o mouse */
+.NextFormButton:hover {
+    background-color: rgb(0, 161, 0);
+}
+
+/* Contêiner que irá abrigar as imagens pré-visualizadas em duas filas */
+#image-preview-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens 'quebrem' para uma nova linha */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 10px; /* Espaçamento entre as imagens */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Estilização das imagens */
+#image-preview-container img {
+    width: 150px; /* Define uma largura fixa */
+    height: 150px; /* Define uma altura fixa */
+    object-fit: cover; /* Faz a imagem se ajustar ao contêiner mantendo o foco central */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de hover para dar um destaque */
+#image-preview-container img:hover {
+    transform: scale(1.05);
+}
+
+
+
+textarea {
+    width: 100%; /* O textarea ocupa toda a largura disponível */
+    min-height: 150px; /* Altura mínima para o textarea */
+    padding: 15px; /* Espaçamento interno */
+    border: 2px solid #ccc; /* Borda inicial */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    background-color: #f9f9f9; /* Cor de fundo leve */
+    color: #333; /* Cor do texto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    resize: vertical; /* Permite redimensionamento vertical */
+    outline: none; /* Remove a borda azul ao focar */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Efeito ao focar no textarea */
+textarea:focus {
+    border-color: #00aaff; /* Cor da borda ao focar */
+    box-shadow: 0px 4px 12px rgba(0, 170, 255, 0.4); /* Sombra azulada ao focar */
+    background-color: #fff; /* Fundo branco ao focar */
+}
+
+
+
+

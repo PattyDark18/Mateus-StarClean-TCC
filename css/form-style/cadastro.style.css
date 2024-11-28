@@ -1,0 +1,218 @@
+/* Estiliza a seção à esquerda com uma cor de fundo verde escuro e texto branco */
+.left-section {
+    background-color: var(--verde-pinho);
+    color: white;
+}
+
+/* Define o estilo do parágrafo dentro da seção de boas-vindas com margem superior e tamanho de fonte */
+.welcome-info p {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+/* Estiliza o botão de redirecionamento com borda branca e cor de texto branca */
+.redirect-button {
+    color: white;
+    border: 2px solid white;
+    width: 125px;
+}
+
+/* Define a cor e a aparência dos links dentro do botão de redirecionamento */
+.redirect-button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* Estiliza a seção à direita com uma cor de fundo verde água */
+.right-section {
+    background-color: #53A198;
+}
+
+/* Define o estilo do contêiner do formulário com fundo branco, bordas arredondadas e altura fixada */
+.form-container {
+    background-color: white;
+    border-radius: 44px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    position: relative;
+    display: none; /* Inicialmente escondido */
+}
+
+/* Torna o contêiner do formulário visível quando a classe 'ativo' é adicionada */
+.form-container.ativo {
+    display: flex;
+}
+
+/* Estiliza o formulário dentro do contêiner com direção de coluna e centralização dos itens */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 85%; 
+    align-items: center;
+}
+
+/* Estiliza os campos de entrada dentro do formulário com padding, bordas arredondadas e fundo */
+.form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Doppio One', serif;
+    border-radius: 11px;
+    background-color: #DEF4EF;
+}
+
+/* Altera a cor de fundo do campo de entrada quando está em foco */
+.form input:focus {
+    background-color: #47c2ff;
+}
+
+/* Define o estilo do texto do placeholder dentro do campo de entrada */
+.form input::placeholder {
+    font-family: 'Doppio One', serif;
+    font-size: 18px;
+}
+
+/* Altera a cor do texto do placeholder quando o campo de entrada está em foco */
+.form input:focus::placeholder {
+    color: white;
+}
+
+/* Estiliza os botões dentro do formulário com cor de texto preta e efeitos de transição */
+.form button {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 135px;
+    height: 35px;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Doppio One', serif;
+    transition: transform 0.3s ease;
+}
+
+/* Define o efeito de aumento ao passar o mouse sobre o botão */
+.form button:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Estiliza o título dentro do formulário com tamanho de fonte e margem */
+.form h3 {
+    font-size: 22px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Define a cor dos ícones das redes sociais no rodapé */
+.instagram-icon, .location-icon, .youtube-icon, .email-icon, .whatsapp-icon {
+    color: white;
+}
+
+/* Esconde o campo de entrada de arquivos */
+.form input[type="file"] {
+    display: none;
+}
+
+/* Estiliza o rótulo do campo de entrada de arquivos com padding e efeitos de transição */
+.file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Doppio One', serif;
+    border-radius: 11px;
+    background-color: #DEF4EF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Define a cor de fundo e do texto do rótulo ao passar o mouse */
+.file-label:hover {
+    background-color: #47c2ff;
+    color: #fff;
+}
+
+/* Estiliza a imagem do perfil com largura, altura e bordas arredondadas */
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Estiliza o botão de retorno com uma cor de fundo vermelha */
+.returnFormButton {
+    background-color: rgba(248, 63, 63, 0.925);
+}
+
+/* Estiliza o botão de próximo e de criação de conta com uma cor de fundo verde */
+.NextFormButton, .creatteAcc {
+    background-color: rgb(79, 231, 79);
+}
+
+/* Define a cor do botão de retorno ao passar o mouse */
+.returnFormButton:hover {
+    background-color: rgb(218, 1, 1);
+}
+
+/* Define a cor do botão de próximo e de criação de conta ao passar o mouse */
+.NextFormButton:hover {
+    background-color: rgb(0, 161, 0);
+}
+.creatteAcc:hover {
+    background-color: rgb(0, 161, 0);
+}
+
+/* Estiliza a mensagem de alerta com cor de fundo e texto específicos */
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Doppio One', serif;
+    display: none; /* Inicialmente escondida */
+}
+
+/* Estiliza os campos de entrada inválidos com borda vermelha e cor de fundo */
+.form input.invalid {
+    border: 2px solid red; 
+    background-color: rgb(248, 179, 179);
+}
+
+/* Estiliza o contêiner da senha para posicionar o ícone de mostrar/ocultar senha */
+.password-container {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%; 
+}
+
+/* Estiliza o ícone para mostrar/ocultar senha com posição absoluta e cursor de ponteiro */
+#togglePassword {
+    position: absolute;
+    right: 10px; 
+    top: 40%; 
+    transform: translateY(-50%); 
+    cursor: pointer;
+    font-size: 1.2em; 
+    color: #000; 
+}
+
+
+@media (max-width: 1300px) {
+    .form-container {
+        max-width: 90%; /* Ajusta a largura máxima para 90% da tela */
+        width: 90%; /* Mantém a largura responsiva */
+    }
+}
+
+

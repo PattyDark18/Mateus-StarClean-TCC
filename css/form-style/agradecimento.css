@@ -1,0 +1,178 @@
+*{
+    font-family: 'Doppio One', serif;
+    
+  }
+
+
+
+
+.container{
+   
+    flex: 1; /* Faz com que o container ocupe o máximo de espaço possível */
+   
+
+    min-height: 100vh;
+background: none;
+
+    position: relative; /* Garante que o elemento filho será posicionado corretamente */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 38px;
+    overflow: hidden; /* Evita que o conteúdo ultrapasse os limites do container */
+ 
+}
+
+.background-image {
+    position: absolute; /* Posiciona o elemento de fundo absolutamente dentro do container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../src/img/Agendamento/agradecimento.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+    z-index: -1; /* Garante que o elemento de fundo fique atrás do conteúdo */
+}
+
+
+.content {
+    position: relative; /* Garante que o conteúdo esteja acima da imagem de fundo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 38px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    flex: 1; /* Faz com que o conteúdo ocupe o máximo de espaço disponível */
+}
+
+
+
+h1, h2, h3, a{
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+    margin-top: 20px;
+  
+}
+
+
+h1{
+    font-size: 30px;
+   
+}
+
+h2{
+    font-size: 22px;
+}
+
+
+.informacoes-agendamento {
+    background-color: rgba(255, 255, 255, 0.459); /* Cor de fundo */
+    border-radius: 38px;
+    width: 600px; /* Largura fixa */
+    max-width: 100%; /* Ajusta para a largura da tela, se necessário */
+    margin: auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e bordas na largura e altura */
+    display: flex; /* Utiliza o flexbox para layout */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    height: auto; /* Ajusta a altura automaticamente para o conteúdo */
+}
+
+.lista-informacoes {
+    width: 100%; /* Ocupa a largura total do contêiner */
+    padding: 15px; /* Espaçamento interno da lista */
+}
+
+.lista-informacoes ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+}
+
+.lista-informacoes li {
+    margin-bottom: 15px; /* Adiciona espaçamento entre os itens da lista */
+}
+
+   
+  .logo{
+    width: 100px;
+  }
+
+
+   .footer { 
+    box-sizing: border-box; 
+    width: 100%; /* O rodapé ocupa toda a largura do container */
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px 0; /* Espaçamento interno vertical */
+    position: relative; 
+
+}
+
+.footer-grid {
+    display: flex; /* Alinhamento flexível */
+    justify-content: space-around; /* Espaçamento igual entre as colunas */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Garante que a grid ocupe toda a largura do rodapé */
+    max-width: 1200px; /* Largura máxima opcional */
+    margin: 0 auto; /* Centraliza a grid horizontalmente */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.footer-column {
+    display: flex; /* Utiliza flexbox para layout interno */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    flex: 1; /* Faz com que cada coluna ocupe espaço igual */
+}
+
+.instagram-icon, .location-icon, .youtube-icon, .email-icon, .logo, a .whatsapp-icon {
+    color: rgb(255, 255, 255); /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+.footer-column i {
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+.footer-column span {
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.btn-container {
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Adiciona margem superior para separar do conteúdo acima */
+}
+
+.btn-voltar {
+    background-color: #ffffff;
+ 
+    border: none;
+    padding: 12px 24px; /* Ajuste o padding conforme necessário */
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    max-width: 200px; /* Define uma largura máxima opcional para o botão */
+    text-align: center; /* Garante que o texto dentro do botão esteja centralizado */
+    z-index: 1; /* Garante que o botão fique acima da imagem */
+    transition: transform 0.3s ease;
+}
+
+.btn-voltar a{
+    color: rgb(0, 0, 0);
+}
+
+
+.btn-voltar:hover {
+    background-color: #aaa9a9;
+    color: #ffffff; /* Ajusta a cor do texto ao passar o mouse */
+    transform: scale(1.05);
+}
