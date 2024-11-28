@@ -34,21 +34,6 @@
 
 ---
 
-Algumas imagens para demonstrar o que alcançamos:
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Paleta de Cores" title="Paleta de cores" src="imagens/paletacores.png" width="400px">
-</p>
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="tela de agendamento" title="Tela de Agendamento" src="imagens/Agendamento.png" width="400px">
-</p>
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="tela de agendamento" title="Tela de Agendamento" src="imagens/trilha_estrelas.png" width="400px">
-</p>
-
-
 ## 🎨 Layout
 
 O layout da aplicação está disponível no Figma:
@@ -117,13 +102,17 @@ Para rodar esta parte basta baixar as pasta como foi pedido no começo e esta pr
 Também temos como logar e se cadastrar:
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="database" title="database" src="imagens/login e cadastro.png" width="400px">
+  <img alt="database" title="login" src="imagens/login.png" width="400px">
 </p>
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="database" title="login" src="imagens/cadastro.png" width="400px">
+</p>
+ 
  
 Angendar os serviços que vçao estar disponíveis na página:
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="database" title="database" src="imagens/servicos.png" width="400px">
+  <img alt="servicos" title="servicos" src="imagens/servicos.png" width="400px">
 </p>
 
 
@@ -140,6 +129,27 @@ E se estiver interessado em ver nossa pagina de administrador basta colocar esse
 fc7226125@gmail.com -> espanha (Administrador)
 fernanda@gmail.com -> espanha (Cliente)
 ```
+
+O administrador pode gerenciar serviços, usuários, cupons e prêmios e ver o serviços agendados pelos clientes.
+
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="tabela usuarios" title="tabela usuarios" src="imagens/administrar_users" width="400px">
+</p>
+
+O usuário Cliente pode agendar serviços, ver seus serviços agendados e usufruir do programa de fidelidade. 
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="tela de agendamento" title="Tela de Agendamento" src="imagens/trilha_estrelas.png" width="400px">
+</p>
+
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="tela de agendamento" title="Tela de Agendamento" src="imagens/Agendamento.png" width="400px">
+</p>
+
+
+
 ---
 
 ##  Citação
