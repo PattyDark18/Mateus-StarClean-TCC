@@ -1,6 +1,6 @@
 # Mateus StarClean
 
-<img alt="capa do projeto" title="mateus starclean" src="imagens/Capturar.PNG">
+<img alt="capa do projeto" title="mateus starclean" src="imagens/MateusStarClean-Logo">
 
 ## 💻 Sobre o projeto
 
@@ -31,12 +31,16 @@
 
 ---
 
+Algumas imagens para demonstrar o que alcançamos:
+
+
+
 ## 🎨 Layout
 
 O layout da aplicação está disponível no Figma:
 
 <a href="https://www.figma.com/design/llPQrYPKagCTNI6b7CsW7Y/Prot%C3%B3tipo-M%C3%A9dia-Fidelidade---Mateus-StarClean-(Copy)?node-id=0-1&m=dev&t=Es42Igk6dqHlCx47-1">
-  <img alt="Made by Cubos Academy" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
+  <img alt="prtótipo de Média Fidelidade" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
 </a>
 
 ### Web
@@ -54,9 +58,8 @@ Este projeto é divido em cinco partes:
 2. html (pasta web)
 3. css (pasta estilização)
 4. src (pasra de arquivos)
-5. vendor
+5. vendor (para utilização do composer)
 
-💡Tanto o Frontend quanto o Mobile precisam que o Backend esteja sendo executado para funcionar.
 
 💡 Recomendamos que baixe o composer para a utilização destes arquivos para uma melhor experiência.
 
@@ -71,8 +74,6 @@ Link de instalação:
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Xampp](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.30/xampp-windows-x64-8.0.30-0-VS16-installer.exe/download), [Composer](https://getcomposer.org/download/). 
 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
-
 Antes de rodar a aplição coloque todos os arquivos em uma só pasta.
 
 #### 🎲 Rodando o Backend (servidor)
@@ -83,7 +84,7 @@ Para rodar o backendo será necessário abrir o xampp e acionar os dois primeiro
   <img alt="Xampp" title="Xampp" src="imagens/xampp.PNG" width="400px">
 </p>
 
-Ápos abrir, clique no admin do my sql, adicione um novo banco de dados com o nome de Mateus_StarCleanTCC, e importe no banco de dados o arquivo que está no backende dentro da pasta database. Ficará assim:
+Após abrir, clique no admin do mysql, adicione um novo banco de dados com o nome de Mateus_StarCleanTCC, e importe no banco de dados o arquivo que está no backend e dentro da pasta database. Ficará assim:
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="database" title="database" src="imagens/database.PNG" width="400px">
@@ -93,7 +94,7 @@ Seu banco de dados está pronto para rodar
 
 #### 🧭 Rodando a aplicação web (html)
 
-Para rodar esta parte basta baixar as pasta como foi pedido no começo e esta pronto para mecher, logo de primeira página, temos a tela que está no inicio do arquivo, logo abaixo uma explicação de quem e a pessoa que trabalha na área.
+Para rodar esta parte basta baixar as pasta como foi pedido no começo e esta pronto para mexer, logo de primeira página, temos a história da marca, que é para você conhecer melhor sobre o empreendimento e sua trajetória no mercado automotivo. 
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="database" title="database" src="imagens/historia.PNG" width="400px">
@@ -122,7 +123,8 @@ A página perfil:
 E se estiver interessado em ver nossa pagina de administrador basta colocar esse email e senha de login
 
 ``` bash
-fc7226125@gmail.com -> espanha (ADM)
+fc7226125@gmail.com -> espanha (Administrador)
+fernanda@gmail.com -> espanha (Cliente)
 ```
 ---
 
