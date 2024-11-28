@@ -77,7 +77,7 @@ Antes de rodar a aplição coloque todos os arquivos em uma só pasta.
 
 #### 🎲 Rodando o Backend (servidor)
 
-Para rodar o backendo será necessário abrir o xampp e acionar os dois primeiro botões como mostra abaixo:
+Para rodar o backend será necessário abrir o xampp e acionar os dois primeiro botões como mostra abaixo:
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="Xampp" title="Xampp" src="imagens/xampp.PNG" width="400px">
@@ -96,7 +96,7 @@ Seu banco de dados está pronto para rodar
 Para rodar esta parte basta baixar as pasta como foi pedido no começo e esta pronto para mexer, logo de primeira página, temos a história da marca, que é para você conhecer melhor sobre o empreendimento e sua trajetória no mercado automotivo. 
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="database" title="database" src="imagens/historia.PNG" width="400px">
+  <img alt="database" title="database" src="imagens/historia.png" width="400px">
 </p>
 
 Também temos como logar e se cadastrar:
