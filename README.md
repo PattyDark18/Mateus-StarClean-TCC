@@ -37,11 +37,11 @@
 Algumas imagens para demonstrar o que alcançamos:
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Paleta de Cores" title="Paleta de cores" src="imagens/Paleta de cores.png" width="400px">
+  <img alt="Paleta de Cores" title="Paleta de cores" src="imagens/paletacores.png" width="400px">
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="tela de agendamento" title="Tela de Agendamento" src="imagens/agendamento.png" width="400px">
+  <img alt="tela de agendamento" title="Tela de Agendamento" src="imagens/Agendamento.png" width="400px">
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
