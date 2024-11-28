@@ -1,7 +1,7 @@
 # Mateus StarClean
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Capa do projeto" title="Site" src="imagens/MateusStarClean-Logo.png" width="400px">
+  <img alt="Capa do projeto" title="Site" src="imagens/MateusStarClean-Logo.png">
 </p>
 
 
