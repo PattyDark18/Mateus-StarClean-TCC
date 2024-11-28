@@ -1,0 +1,16 @@
+{
+    "name": "mateus/star-clean-oficial",
+    "description": "Description: Projeto Star Clean Oficial",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateus",
+            "email": "mateus_StarClean@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
