@@ -36,144 +36,140 @@
 
 ## 🎨 Layout
 
-O layout da aplicação está disponível no Figma:
+O layout da aplicação está disponível no Figma. Acesse abaixo o protótipo de **Média Fidelidade**:
 
 <a href="https://www.figma.com/design/llPQrYPKagCTNI6b7CsW7Y/Prot%C3%B3tipo-M%C3%A9dia-Fidelidade---Mateus-StarClean-(Copy)?node-id=0-1&m=dev&t=Es42Igk6dqHlCx47-1">
-  <img alt="prtótipo de Média Fidelidade" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
+  <img alt="Protótipo Figma" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
 </a>
 
-### Web
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Figma" title="Figma" src="imagens/figma.png" width="400px">
+<p align="center">
+  <img alt="Protótipo Figma" src="imagens/figma.png" width="600px">
 </p>
 
 ---
 
-## 🛣️ Como executar o projeto
+## 🛠️ Como executar o projeto
 
-Este projeto é divido em cinco partes:
-1. Backend (pasta server) 
-2. html (pasta web)
-3. css (pasta estilização)
-4. src (pasra de arquivos)
-5. vendor (para utilização do composer)
+### Este projeto é dividido em cinco partes:
 
+1. **Backend** (`pasta server`)
+2. **Frontend HTML** (`pasta web`)
+3. **CSS** (`pasta estilização`)
+4. **Arquivos de Fonte** (`pasta src`)
+5. **Vendor** (para utilização do Composer)
 
-💡 Recomendamos que baixe o composer para a utilização destes arquivos para uma melhor experiência.
-
-Link de instalação:
-
-<a href="https://getcomposer.org/download/">
-  <img alt="Composer" src="https://img.shields.io/badge/Acessar%20instalação%20-composer-%2304D361">
-</a>
-
-### Pré-requisitos
-
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Xampp](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.30/xampp-windows-x64-8.0.30-0-VS16-installer.exe/download), [Composer](https://getcomposer.org/download/). 
-
-Antes de rodar a aplição coloque todos os arquivos em uma só pasta.
-
-#### 🎲 Rodando o Backend (servidor)
-
-Para rodar o backend será necessário abrir o xampp e acionar os dois primeiro botões como mostra abaixo:
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Xampp" title="Xampp" src="imagens/xampp.PNG" width="400px">
-</p>
-
-Após abrir, clique no admin do mysql, adicione um novo banco de dados com o nome de Mateus_StarCleanTCC, e importe no banco de dados o arquivo que está no backend e dentro da pasta database. Ficará assim:
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="database" title="database" src="imagens/database.PNG" width="400px">
-</p>
-
-Seu banco de dados está pronto para rodar
-
-#### 🧭 Rodando a aplicação web (html)
-
-Para rodar esta parte basta baixar as pasta como foi pedido no começo e esta pronto para mexer, logo de primeira página, temos a história da marca, que é para você conhecer melhor sobre o empreendimento e sua trajetória no mercado automotivo. 
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="database" title="database" src="imagens/historia.png" width="400px">
-</p>
-
-Também temos como logar e se cadastrar:
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="database" title="login" src="imagens/login.png" width="400px">
-</p>
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="database" title="login" src="imagens/cadastro.png" width="400px">
-</p>
- 
- 
-Angendar os serviços que vão estar disponíveis na página:
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="servicos" title="servicos" src="imagens/servicos.png" width="400px">
-</p>
-
-
-A página perfil:
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="database" title="database" src="imagens/perfil.png" width="400px">
-</p>
-
-
-E se estiver interessado em ver nossa pagina de administrador basta colocar esse email e senha de login
-
-``` bash
-fc7226125@gmail.com -> espanha (Administrador)
-fernanda@gmail.com -> espanha (Cliente)
-```
-
-O administrador pode gerenciar serviços, usuários, cupons e prêmios e ver o serviços agendados pelos clientes.
-
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="tabela usuarios" title="tabela usuarios" src="imagens/administrar_users.png" width="400px">
-</p>
-
-O usuário Cliente pode agendar serviços, ver seus serviços agendados e usufruir do programa de fidelidade. 
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="tela de agendamento" title="Tela de Agendamento" src="imagens/trilha_estrelas.png" width="400px">
-</p>
-
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="tela de agendamento" title="Tela de Agendamento" src="imagens/Agendamento.png" width="400px">
-</p>
-
-
+💡 **Recomendação:** Para uma melhor experiência, use o **Composer** para gerenciar dependências.
 
 ---
 
-##  Citação
+### 📥 **Pré-requisitos**
 
-``` bash
+Antes de começar, você precisa instalar as seguintes ferramentas:
 
-PEREIRA, Fernanda; SILVEIRA, Natalia; LIMA, Willian. Identidade visual e marketing: justificativas e proposta para o redesign de uma estética automotiva. 2024. 40 p. Artigo.
+- [XAMPP](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.30/xampp-windows-x64-8.0.30-0-VS16-installer.exe/download)
+- [Composer](https://getcomposer.org/download/)
 
-```
-##  Autoras
+Coloque todos os arquivos do projeto em uma única pasta para facilitar a execução.
 
- <br />
- <sub><b>Fernanda Pereira</b></sub></a>✨</a>
- <br />
- 
- <br />
- <sub><b>Natalia Silveira</b></sub></a>✨</a>
- <br />
+---
+
+### ⚙️ **Rodando o Backend (Servidor)**
+
+1. Abra o **XAMPP** e inicie os serviços do **Apache** e **MySQL**.
+
+<p align="center">
+  <img alt="XAMPP" title="XAMPP" src="imagens/xampp.PNG" width="500px">
+</p>
+
+2. Acesse o **phpMyAdmin** através do botão "Admin" do MySQL e crie um novo banco de dados chamado `Mateus_StarCleanTCC`.
+
+3. Importe o arquivo SQL que está na pasta `backend/database` para o banco de dados criado.
+
+<p align="center">
+  <img alt="Database" title="Database" src="imagens/database.PNG" width="500px">
+</p>
+
+Agora, o banco de dados está configurado e pronto para rodar.
+
+---
+
+### 🌐 **Rodando a aplicação web (Frontend)**
+
+1. **Baixe e organize** as pastas conforme mencionado acima.
+2. Abra o navegador e acesse o arquivo HTML da aplicação.
+
+Logo na primeira página, você verá a **história da marca**, para conhecer melhor o empreendimento.
+
+<p align="center">
+  <img alt="História da Marca" title="História da Marca" src="imagens/historia.png" width="600px">
+</p>
+
+3. Você também pode **fazer login ou cadastro**:
+
+<p align="center">
+  <img alt="Tela de Login" title="Tela de Login" src="imagens/login.png" width="600px">
+</p>
+
+<p align="center">
+  <img alt="Tela de Cadastro" title="Tela de Cadastro" src="imagens/cadastro.png" width="600px">
+</p>
+
+4. Agende os serviços que estarão disponíveis na plataforma:
+
+<p align="center">
+  <img alt="Serviços" title="Serviços" src="imagens/servicos.png" width="600px">
+</p>
+
+5. Acesse seu **perfil** para visualizar seus dados e serviços agendados:
+
+<p align="center">
+  <img alt="Perfil" title="Perfil" src="imagens/perfil.png" width="600px">
+</p>
+
+---
+
+### 🔑 **Credenciais de Acesso**
+
+Para acessar a página de administração, utilize as seguintes credenciais:
+
+- **Administrador**:
+  - Email: `fc7226125@gmail.com`
+  - Senha: `espanha`
+
+- **Cliente**:
+  - Email: `fernanda@gmail.com`
+  - Senha: `espanha`
+
+O **administrador** pode gerenciar serviços, usuários, cupons e prêmios, além de visualizar os agendamentos dos clientes.
+
+<p align="center">
+  <img alt="Administração de Usuários" title="Administração de Usuários" src="imagens/administrar_users.png" width="600px">
+</p>
+
+O **cliente** pode agendar serviços, visualizar serviços agendados e participar do programa de fidelidade.
+
+<p align="center">
+  <img alt="Tela de Agendamento" title="Tela de Agendamento" src="imagens/trilha_estrelas.png" width="600px">
+</p>
+
+---
+
+## 📜 Citação
+
+> PEREIRA, Fernanda; SILVEIRA, Natalia; LIMA, Willian. **Identidade visual e marketing: justificativas e proposta para o redesign de uma estética automotiva**. 2024. 40 p. Artigo.
+
+---
+
+## 👩‍💻 Autoras
+
+- **Fernanda Pereira** [Instagram](https://www.instagram.com/FernandaPereira529)
+- **Natália Silveira** ✨
 
 ---
 
 ## 📝 Licença
 
-<!-- Este projeto esta sobe a licença [ETEC](./LICENSE). -->
+Feito com ❤️ por **Fernanda Pereira** e **Natália Silveira**.  
+Entre em contato: [Instagram](https://www.instagram.com/FernandaPereira529)
 
-Feito com ❤️ por Fernanda Pereira e Natalia Silveira 👋🏽 [Entre em contato!](https://www.instagram.com/FernandaPereira529)
-
+---
