@@ -132,7 +132,7 @@ fernanda@gmail.com -> espanha (Cliente)
 
 ``` bash
 
-PEREIRA, Fernanda; SILVEIRA, Natalia. Identidade visual e marketing: justificativas e proposta para o redesign de uma estética automotiva. 2024. 40 p. Artigo.
+PEREIRA, Fernanda; SILVEIRA, Natalia; LIMA, Willian. Identidade visual e marketing: justificativas e proposta para o redesign de uma estética automotiva. 2024. 40 p. Artigo.
 
 ```
 ##  Autoras
