@@ -1,6 +1,9 @@
 # Mateus StarClean
 
-<img alt="capa do projeto" title="mateus starclean" src="imagens/MateusStarClean-Logo.png">
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="Capa do projeto" title="Site" src="imagens/MateusStarClean-Logo.png" width="400px">
+</p>
+
 
 ## 💻 Sobre o projeto
 
