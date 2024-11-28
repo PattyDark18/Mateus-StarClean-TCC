@@ -45,7 +45,7 @@ Algumas imagens para demonstrar o que alcançamos:
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="tela de agendamento" title="Tela de Agendamento" src="imagens/servicos.png" width="400px">
+  <img alt="tela de agendamento" title="Tela de Agendamento" src="imagens/trilha_estrelas.png" width="400px">
 </p>
 
 
