@@ -63,7 +63,7 @@ if (isset($_SESSION['logado']) && $_SESSION['logado']) {
     <link rel="stylesheet" href="../../css/preset/vars.css">
     <link rel="stylesheet" href="../../css/preset/modals.css">
     <link rel="stylesheet" href="../../css/preset/bases/base-estilo.css">
-    <link rel="stylesheet" href="../../css/servicos/servicos.estilo.css">
+    <link rel="stylesheet" href="../../css/servicos/servicos-estilo.css">
     <link rel="stylesheet" href="../../css/home-style/responsivo.css">
     <title>Serviços Oferecidos - Mateus StarClean</title>
 </head>
