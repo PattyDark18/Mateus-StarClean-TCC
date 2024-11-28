@@ -1,6 +1,6 @@
 # Mateus StarClean
 
-<img alt="capa do projeto" title="mateus starclean" src="imagens/MateusStarClean-Logo">
+<img alt="capa do projeto" title="mateus starclean" src="imagens/MateusStarClean-Logo.png">
 
 ## 💻 Sobre o projeto
 
