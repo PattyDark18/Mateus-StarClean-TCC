@@ -109,7 +109,7 @@ Também temos como logar e se cadastrar:
 </p>
  
  
-Angendar os serviços que vçao estar disponíveis na página:
+Angendar os serviços que vão estar disponíveis na página:
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="servicos" title="servicos" src="imagens/servicos.png" width="400px">
@@ -134,7 +134,7 @@ O administrador pode gerenciar serviços, usuários, cupons e prêmios e ver o s
 
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="tabela usuarios" title="tabela usuarios" src="imagens/administrar_users" width="400px">
+  <img alt="tabela usuarios" title="tabela usuarios" src="imagens/administrar_users.png" width="400px">
 </p>
 
 O usuário Cliente pode agendar serviços, ver seus serviços agendados e usufruir do programa de fidelidade. 
